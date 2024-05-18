@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divLogout {
+    background-color: #E0E2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Alinhar a foto de perfil */
+.profileImage {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+    width: 10px;
+    height: 10px;
+}
+
+.profileImage img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Alinhamento da logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilização layout */
+.container {
+    background: linear-gradient(to right, #F17022, #F17022);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    height: 28rem;
+    width: 75rem;
+    border-radius: 20px;
+}
+
+/* Estilização do título */
+.title {
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* Estilização do agrupamento */
+.group {
+    width: 75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilização do agrupamento entre as bordas */
+.information {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 15px;
+    width: 30rem;
+}
+
+/* Estilização da div do texto */
+.text {
+    margin: 15px;
+    color: white;
+}
+
+/* Estilização da div do botão */
+.button {
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* Estilização dos botões */
+.button button {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Estilização do botão maior */
+.logout {
+    justify-content: center;
+    display: flex;
+}
+
+/* Estilização dos links */
+.termos a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 4px;
+}
+
+/* Estilizando a div dos links */
+.termos {
+    margin-top: 120px;
+    text-align: center;
+}

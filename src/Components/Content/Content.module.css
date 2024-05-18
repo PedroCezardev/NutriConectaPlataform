@@ -1,0 +1,47 @@
+.Content{
+    height: 520px;
+    width: 1130px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 15px;
+    margin-left: 3rem;
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    box-shadow: 0 2rem 3rem  rgba(74, 78, 117, 0.18);
+    transition: all 0.3s ease;
+}
+
+.Content:hover{
+    box-shadow: none;
+}
+
+.Content h1{
+    color: black;
+}
+
+/* Estiliza toda a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem vertical */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+  }
+  
+  /* Estiliza a parte interna da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do trilho da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas do trilho */
+  }
+  
+  /* Estiliza o polegar (thumb) da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background: #cdcdcd; /* Cor do polegar da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas do polegar */
+  }
+  
+  /* Estiliza o polegar quando está sendo ativado (clicado) */
+  ::-webkit-scrollbar-thumb:active {
+    background: #939393; /* Cor do polegar quando ativado */
+  }
