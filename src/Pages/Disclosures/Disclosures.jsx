@@ -1,15 +1,11 @@
 import React from 'react'
 import style from "./Disclosures.module.css"
 import Content from '../../Components/Content/Content'
-import NavBar from '../../Components/Navbar/NavBar'
 import SideBar from '../../Components/SideBar/SideBar'
 
 const Disclosures = () => {
   return (
     <>
-    <div className={style.container}>
-      <NavBar />
-
       <div className={style.body}>
         <SideBar />
 
@@ -32,7 +28,6 @@ const Disclosures = () => {
         </Content>
         
       </div>
-    </div>
     </>
   )
 }

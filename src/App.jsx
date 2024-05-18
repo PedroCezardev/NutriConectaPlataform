@@ -1,6 +1,6 @@
 import './App.css'
-import React from 'react';
 import { BrowserRouter as Router, Routes  , Route } from 'react-router-dom';
+import React, { useState } from 'react';
 
 import Home from "./Pages/Home/Home";
 import DashBoard from "./Pages/Dashboard/Dashboard";
@@ -12,12 +12,16 @@ import Tutorial from "./Pages/Tutorial/Tutorial";
 import Messages from "./Pages/Messages/Messages";
 import Login from "./Pages/Login/Login";
 import Logout from "./Pages/Logout/Logout";
+import NavBar from './Components/Navbar/NavBar';
+import SideBar from './Components/SideBar/SideBar';
+import NotFound from './Pages/PageNotfound/PageNotFound';
 
 function App() {
 
   return (
 
     <>
+    <NavBar/>
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/dashboard' element={<DashBoard />} />
@@ -29,6 +33,7 @@ function App() {
             <Route path='/Messages' element={<Messages />} />
             <Route path='/login' element={<Login />} />
             <Route path='/logout' element={<Logout />} />
+            <Route path= "*" element={<NotFound />} />
         </Routes>
     </>
   )

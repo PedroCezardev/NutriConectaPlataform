@@ -7,9 +7,6 @@ import SideBar from '../../Components/SideBar/SideBar'
 const Messages = () => {
   return (
     <>
-    <div className={style.container}>
-      <NavBar />
-
       <div className={style.body}>
         <SideBar />
 
@@ -32,7 +29,6 @@ const Messages = () => {
         </Content>
         
       </div>
-    </div>
     </>
   )
 }

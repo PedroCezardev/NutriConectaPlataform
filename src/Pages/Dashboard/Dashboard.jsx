@@ -1,14 +1,11 @@
 import React from 'react'
 import style from "./Dashboard.module.css";
 import Content from "../../Components/Content/Content";
-import NavBar from '../../Components/Navbar/NavBar';
 import SideBar from '../../Components/SideBar/SideBar';
 
 
 const Dashboard = () => {
   return (
-    <div className={style.container}>
-      <NavBar />
 
       <div className={style.body}>
         <SideBar />
@@ -32,7 +29,6 @@ const Dashboard = () => {
         </Content>
         
       </div>
-    </div>
   )
 }
 

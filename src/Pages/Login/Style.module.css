@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .DivLogin{
-  background: #f6f5f7;
+  background-color: var(--color-background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,5 +16,5 @@
 }
 
 .Title{
-  color: black;
+  color: var(--color-black);
 }
