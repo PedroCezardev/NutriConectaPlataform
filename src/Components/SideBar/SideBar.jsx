@@ -1,17 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import HomeIcon from '@mui/icons-material/Home';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import InfoIcon from '@mui/icons-material/Info';
-import AddToPhotosIcon from '@mui/icons-material/AddToPhotos';
-import ChatIcon from '@mui/icons-material/Chat';
-import ArticleIcon from '@mui/icons-material/Article';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import style from "./SideBar.module.css";
-import {  pink } from '@mui/material/colors';
-import { GoHomeFill } from "react-icons/go";
 import Profile from "../../assets/Profile.svg";
+
+import { GoHomeFill } from "react-icons/go";
+import { RiDashboardFill } from "react-icons/ri";
+import { MdArticle } from "react-icons/md";
+import { MdAddToPhotos } from "react-icons/md";
+import { BsChatLeftTextFill } from "react-icons/bs";
+import { FaInfoCircle } from "react-icons/fa";
+import { MdAssignment } from "react-icons/md";
+import { IoMdExit } from "react-icons/io";
 
 const SideBar = () => {
 
@@ -20,16 +19,16 @@ const SideBar = () => {
       <header className={style.profile}>
         <div>
           <Link to="/Profile">
-          <img src={Profile} alt="" />
-          <p>Olá!</p>
-          <h3>Minino Ivo</h3>
+            <img src={Profile} alt="" />
+            <p>Olá!</p>
+            <h3>Minino Ivo</h3>
           </Link>
         </div>
       </header>
       <section className={style.Menu}>
         <h3>Menu</h3>
         <Link to="/Dashboard">
-          <DashboardIcon style={{ color: 'black' }} />
+          <RiDashboardFill className={style.icon} />
           Dashboard
         </Link>
         <Link to="/">
@@ -37,30 +36,30 @@ const SideBar = () => {
           Home
         </Link>
         <Link to="/Disclosures">
-          <ArticleIcon sx={{ color: pink[500] }} />
+          <MdArticle className={style.icon} />
           Divulgações
         </Link>
         <Link to="/NewPost">
-          <AddToPhotosIcon style={{ color: 'success' }} />
+          <MdAddToPhotos className={style.icon} />
           Novo
         </Link>
         <Link to="/messages">
-          <ChatIcon style={{ color: 'success' }} />
+        <BsChatLeftTextFill className={style.icon} />
           Conversas
         </Link>
         <Link to="/About">
-          <InfoIcon style={{ color: 'success' }} />
+        <FaInfoCircle className={style.icon} />
           Sobre
         </Link>
         <Link to="/tutorial">
-          <AssignmentIcon style={{ color: 'success' }} />
+          <MdAssignment className={style.icon} />
           Tutorial
         </Link>
       </section>
       <div className={style.logout}>
         <button>
           <Link to="/Logout">
-            <ExitToAppIcon style={{ color: 'primary' }} />
+            <IoMdExit className={style.iconExit} />
             Sair
           </Link>
         </button>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import style from "./Logout.module.css";
+import profile from '../../assets/Profile.svg'
 
 const Logout = () => {
   // Lógica para realizar o logout, como limpar o token de autenticação, etc.
@@ -24,11 +25,11 @@ const Logout = () => {
           </div>
           <section className={style.information}>
             <div className={style.profilePhoto}>
-              <img src="./profile-1.jpg" alt="Foto do perfil" />
+              <img src={profile} alt="Foto do perfil" />
             </div>
             <div className={style.text}>
               <p>
-                Conectado como <strong>Jhon Silva</strong>
+                Conectado como <strong>Mininu Ivo</strong>
               </p>
             </div>
             <Link to="/login" className={style.buttonLink}>
@@ -46,20 +47,14 @@ const Logout = () => {
           </div>
         </section>
         <div className={style.termos}>
-          <a href="/index.html" className={style.link}>
-            Termos
-          </a>
           <a href="#" className={style.link}>
-            Privacidade
-          </a>
-          <a href="#" className={style.link}>
-            Documentos
+            Termos Privacidade
           </a>
           <a href="#" className={style.link}>
             Gerenciar cookies
           </a>
           <a href="#" className={style.link}>
-            Entre em contato com o suporte DashMetrics
+            Entre em contato com o suporte NutriConecta
           </a>
           <a href="#" className={style.link}>
             Não compartilhe minhas informações pessoais

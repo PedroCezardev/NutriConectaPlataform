@@ -1,11 +1,11 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import style from "./Home.module.css";
 import Content from "../../Components/Content/Content";
 import SideBar from '../../Components/SideBar/SideBar';
-import NavBar from '../../Components/Navbar/NavBar';
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import CommentIcon from '@mui/icons-material/Comment';
+
+import { FaHeart } from "react-icons/fa6";
+import { FaCommentDots } from "react-icons/fa";
+
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
 import SwiperCore from 'swiper'
@@ -13,7 +13,6 @@ import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
 import Padaria from "../../assets/image.Padaria.svg";
@@ -26,9 +25,6 @@ import fundo4 from "../../assets/imagemFundo4.svg";
 const Home = () => {
   return (
     <>
-    <div className={style.container}>
-      <NavBar />
-
       <div className={style.body}>
         <SideBar />
 
@@ -37,7 +33,6 @@ const Home = () => {
 
             <div className={style.sliderContainer}>
               <Swiper
-                  // install Swiper modules
                   modules={[Navigation, Pagination, Scrollbar, A11y]}
                   spaceBetween={50}
                   slidesPerView={1}
@@ -59,7 +54,7 @@ const Home = () => {
               </Swiper>
             </div>
 
-          <div className={style.group}>
+            <div className={style.group}>
               <div className={style.Home}>
               <div className={style.title}>
                 <h1>Home</h1>
@@ -77,8 +72,8 @@ const Home = () => {
                   </div>
                   <div className={style.Comentarys}>
                     <div className={style.icons}>
-                      <FavoriteIcon style={{ color: 'primary' }} />
-                      <CommentIcon style={{ color: 'primary' }} />
+                      <FaHeart className={style.icon} />
+                      <FaCommentDots className={style.icon} />
                     </div>
                     <div className={style.DataTime}>
                       <p>29 de abril de 2024</p>
@@ -99,8 +94,8 @@ const Home = () => {
                   </div>
                   <div className={style.Comentarys}>
                     <div className={style.icons}>
-                      <FavoriteIcon style={{ color: 'primary' }} />
-                      <CommentIcon style={{ color: 'primary' }} />
+                      <FaHeart className={style.icon} />
+                      <FaCommentDots className={style.icon} />
                     </div>
                     <div className={style.DataTime}>
                       <p>29 de abril de 2024</p>
@@ -121,8 +116,8 @@ const Home = () => {
                   </div>
                   <div className={style.Comentarys}>
                     <div className={style.icons}>
-                      <FavoriteIcon style={{ color: 'primary' }} />
-                      <CommentIcon style={{ color: 'primary' }} />
+                      <FaHeart className={style.icon} />
+                      <FaCommentDots className={style.icon} />
                     </div>
                     <div className={style.DataTime}>
                       <p>29 de abril de 2024</p>
@@ -209,7 +204,6 @@ const Home = () => {
         </Content>
         
       </div>
-    </div>
     </>
   )
 }

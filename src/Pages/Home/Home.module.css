@@ -1,9 +1,3 @@
-/* estilização que engloba toda página */
-.container{
-    display: flex;
-    flex-direction: column;
-}
-
 /* estilização do body, estilização entre o sidebar e content */
 .body{
     display: flex;
@@ -52,7 +46,7 @@
     margin-bottom: 2rem;
     width: 30rem;
     text-align: left;
-    background-color: #e4e4e4;
+    background-color: var(--color-background);
 }
 
 .contantHome h3{
@@ -64,8 +58,17 @@
 .contantHome p{
     margin: 0.5rem;
     white-space: normal;
-    color: #2e2e2e;
+    color: var(--color-icon);
 }
+
+/* estilização do icones */
+.icon{
+    font-size: 23px;
+  }
+  
+  .icon path{
+    color: var(--color-icon);
+  }
 
 /* estilizaão do nome do usuário */
 .titleContant{
@@ -76,7 +79,7 @@
 }
 
 .titleContant p{
-    color: #797979;
+    color: var(--color-datatime);
 }
 
 /* estilizacao no texto do conteudo */
@@ -92,7 +95,7 @@
 /* estilizacao do texto data e hora */
 .DataTime p{
     font-size: 1rem;
-    color: #797979;
+    color: var(--color-datatime);
     
 }
 
@@ -121,7 +124,7 @@
     margin-bottom: 2rem;
     width: 25rem;
     text-align: left;
-    background-color: #e4e4e4;
+    background-color: var(--color-background);
 }
 
 .header{
@@ -144,7 +147,7 @@
 .info p{
     width: 15rem;
     font-size: 0.9rem;
-    color: #6b6a6a;
+    color: var(--color-info);
 }
 
 .description p{
@@ -154,7 +157,7 @@
   white-space: normal; /* Permite a quebra de linha */
   word-wrap: break-word; /* Garante a quebra de palavras longas */
   font-size: 1rem;
-  color: #2e2e2e;
+  color: var(--color-icon);
 }
 
 .description button{
@@ -162,7 +165,7 @@
     height: 2rem;
     width: 7rem;
     font-size: 1rem;
-    background-color: #F17022;
+    background-color: var(--color-button);
     border: none;
     border-radius: 7px;
     display: flex;

@@ -1,5 +1,5 @@
 .navbar__Navbar {
-    background-color: #F17022;
+    background-color: var(--color-orange);
     height: 60px;
     width: 100%;
     top: 0%;
@@ -11,19 +11,21 @@
 .navbar__Navbar h1{
     font-size: 1.5rem;
     margin-left: 2rem;
+    color: #fff;
 }
 
-.input{
+.menu{
     display: flex;
     align-items: center;
     justify-content: end;
     text-align: center;
     height: 40px;
     margin-right: 2rem;
+    gap: 2rem;
 }
 
 .input input{
-    background-color: #f8f8f8;
+    background-color: var(--color-light);
     font-size: 1rem;
     display: flex;
     padding: 5px;
@@ -31,4 +33,56 @@
     border: none;
     width: 15rem;
     height: 35px;
+}
+
+.darkMode{
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.8rem;
+    width: 3.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2.5px solid #fff;
+}
+
+.icon{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon path{
+    color: var(--color-icon);
+}
+
+.iconActive {
+    background-color: var(--color-icon-active);
+    border-radius: 5px;
+    font-size: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconActive path{
+    font-size: 0.5rem;
+    height: 1px;
+    width: 1px;
+    color: #fff;
 }

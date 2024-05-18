@@ -8,17 +8,17 @@
 }
 
 .sidebar h1, h2, h3, p{
-    color: black;
+    color: var(--color-black);
 }
 
 /* estilizacao para are de perfil do usuário */
 .profile{
     height: 7rem;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 3px 10px;
     cursor: pointer;
-    box-shadow: 0 2rem 3rem  rgba(114, 120, 173, 0.18);
+    box-shadow: 0 2rem 3rem  var(--color-box-shadow);
     transition: all 0.3s ease;
 }
 
@@ -31,32 +31,58 @@
 
 }
 
+.profile link{
+    font-size: none;
+}
+
 /* estilizacao para o menu de opções */
 .Menu{
     margin: 10px;
     margin-top: 1rem;
 }
 
-.icon {
-    color: black;
+/* estilização do icones */
+.icon{
     font-size: 25px; /* Ajuste o tamanho conforme necessário */
+}
+
+.icon path{
+    color: var(--color-icon);
+}
+
+.icon path:hover{
+    color: var(--color-white);
+    transition: 0.4s;
+}
+
+/* estilização do icone 'exit' */
+.iconExit{
+    font-size: 25px;
+}
+.iconExit path{
+    color: var(--color-icon-exit);
+}
+.iconExit path:hover{
+    color: var(--color-white);
+    transition: 0.4s;
 }
 
 .Menu a{
     padding: 8px;    
     list-style-type: none;
-    color: black;
+    color: var(--color-icon);
     display: flex;
     align-items: center;
     gap: 7px;
     cursor: pointer;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .Menu a:hover{
-    background-color: rgb(250, 157, 70);
+    background-color: var(--color-menu-active);
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.4s;
     
 }
 
@@ -69,36 +95,37 @@
 
 .logout a{
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: var(--color-icon-exit);
     width: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 5rem;
+    font-weight: bold;
 }
 
 .logout button{
     height: 2.3rem;
     width: 7rem;
     font-size: 1rem;
-    background-color: #e4e4e4;
-    border: solid 3px #fff;
+    background-color: var(--color-background);
+    border: solid 3px var(--color-white);
     border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 2rem 3rem  rgba(74, 78, 117, 0.18);
+    box-shadow: 0 2rem 3rem var(--color-box-shadow);
     transition: all 0.3s ease;
 }
 
 .logout button:hover{
-    background-color: rgb(255, 82, 82);
+    background-color: var(--color-button-exit-hover);
     transition: 0.5s;
-    color: #fff;
+    color: var(--color-white);
     box-shadow: none;
 }
 
 .logout button, a:hover{
-    color:#fff;
+    color: var(--color-white);
     transition: 0.1s;
 }

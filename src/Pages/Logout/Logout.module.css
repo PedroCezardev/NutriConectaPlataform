@@ -8,7 +8,7 @@
 }
 
 .divLogout {
-    background-color: #E0E2FF;
+    background-color: var(--color-background);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,11 +25,12 @@
     height: 10px;
 }
 
-.profileImage img {
-    width: 10px;
-    height: 10px;
+.profilePhoto img {
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     overflow: hidden;
+    margin-left: 15px;
 }
 
 /* Alinhamento da logo */
@@ -41,17 +42,21 @@
 
 /* Estilização layout */
 .container {
-    background: linear-gradient(to right, #F17022, #F17022);
+    background: linear-gradient(to right, #f98035,#f92f0c );
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    height: 28rem;
-    width: 75rem;
+    height: 25rem;
+    width: 65rem;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* Estilização do título */
 .title {
     text-align: center;
-    color: white;
+    color: var(--color-white);
     font-size: 1.4rem;
 }
 
@@ -66,19 +71,22 @@
 
 /* Estilização do agrupamento entre as bordas */
 .information {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     align-items: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid var(--color-light);
     border-radius: 10px;
     margin: 15px;
-    width: 30rem;
+    width: 35rem;
 }
 
 /* Estilização da div do texto */
 .text {
     margin: 15px;
-    color: white;
+}
+
+.text p{
+    color: var(--color-white);
 }
 
 /* Estilização da div do botão */
@@ -89,8 +97,8 @@
 
 /* Estilização dos botões */
 .button button {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: var(--color-icon);
+    color: var(--color-white);
     font-size: 12px;
     padding: 10px 45px;
     border: 1px solid transparent;
@@ -110,7 +118,7 @@
 
 /* Estilização dos links */
 .termos a {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 15px;
     text-decoration: none;
     margin: 4px;
