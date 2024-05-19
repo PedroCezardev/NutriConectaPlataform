@@ -12,6 +12,7 @@ import Tutorial from "./Pages/Tutorial/Tutorial";
 import Messages from "./Pages/Messages/Messages";
 import Login from "./Pages/Login/Login";
 import Logout from "./Pages/Logout/Logout";
+import ProductModal from './Pages/ProductModal/ProductModal'
 import NavBar from './Components/Navbar/NavBar';
 import SideBar from './Components/SideBar/SideBar';
 import NotFound from './Pages/PageNotfound/PageNotFound';
@@ -33,6 +34,7 @@ function App() {
             <Route path='/Messages' element={<Messages />} />
             <Route path='/login' element={<Login />} />
             <Route path='/logout' element={<Logout />} />
+            <Route path='/productmodal' element={<ProductModal />} />
             <Route path= "*" element={<NotFound />} />
         </Routes>
     </>

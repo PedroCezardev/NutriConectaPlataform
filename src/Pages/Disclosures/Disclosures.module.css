@@ -8,3 +8,91 @@
     display: flex;
     flex-direction: column;
 }
+.notificationsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Adiciona quebra de linha para telas menores */
+}
+
+.Notification {
+  display: flex;
+  flex-direction: column;
+  height: 15.5rem;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 2rem;
+  width: calc(50% - 20px); /* Ajuste para duas notificações lado a lado */
+  text-align: left;
+  background-color: #e4e4e4;
+}
+.header {
+  display: flex;
+  align-items: colum; /* Alinha verticalmente a imagem e o texto */
+}
+
+.imgProfile {
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+  margin-left: 10px;
+}
+
+.imgProfile img {
+  max-width: 80px; /* Define o tamanho máximo da imagem */
+  max-height: 80px;
+  margin-top: 20px;
+}
+.info {
+  width: 15rem;
+}
+
+.info h3 {
+  width: 15rem;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.info p {
+  width: 15rem;
+  font-size: 0.9rem;
+  color: #000000;
+}
+.description p {
+  min-width: 20rem; /* Define a largura mínima */
+  max-width: 100rem; /* Limita a largura máxima */
+  margin: 20px 10px;
+  white-space: normal; /* Permite a quebra de linha */
+  word-wrap: break-word; /* Garante a quebra de palavras longas */
+  font-size: 1rem;
+  color: #b11010;
+}
+
+.description button {
+  margin: 30px 15px;
+  height: 2rem;
+  width: 7rem;
+  font-size: 1rem;
+  background-color: #f17022;
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.DataTime {
+  font-size: 1rem;
+  color: #6b6b6b;
+  margin-left: 90%;
+  margin-top:10px;
+  
+}
+.Notification{
+  display: flex;
+  flex-direction: column;
+  height: 15.5rem;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 2rem;
+  width: 25rem;
+  text-align: left;
+  background-color: var(--color-background);
+}
