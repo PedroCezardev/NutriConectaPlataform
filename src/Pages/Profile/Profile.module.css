@@ -30,6 +30,7 @@
   width: 50px; /*tamanho da imagem */
   height: auto;
   margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+  border-radius: 100%;
 }
 
 .textWrapper {
@@ -45,7 +46,7 @@
 
 .rectangleEditar {
   position: relative;
-  top: 5px; 
+  top: 5px; /* Ajuste a distância para baixo conforme necessário */
   right: 0px;
   width: 100px;
   height: 29px;
@@ -53,12 +54,21 @@
   color: white;
   display: flex;
   justify-content: center;
-  border-radius: 5px;
+  align-items: center; /* Centraliza verticalmente */
+  border-radius: 10px;
   z-index: 2;
   margin-left: auto;
 }
+
 .rectangleEditar p {
   color: white;
+  display: flex; /* Usa flex para alinhar ícone e texto */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 0; /* Remove margens padrão */
+}
+
+.rectangleEditar p svg {
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
 }
 
 .rectangleInfo {
@@ -66,7 +76,7 @@
   background-color: #D4D4D4; 
   margin-top: 30px; /* Espaçamento entre "Gerenciar Conta" e o retângulo */
   padding: 20px; 
-  border-radius: 8px; /* Adiciona bordas arredondadas */
+  border-radius: 20px; /* Adiciona bordas arredondadas */
 }
 
 .rectangleTitleInfo, .rectangleTitleSobre, .rectangleTitleEstatisticas {
@@ -99,7 +109,7 @@
   width: 48%; 
   background-color: #D4D4D4; 
   padding: 20px; 
-  border-radius: 8px; 
+  border-radius: 20px; 
 }
 
 .textInsideRectangleSobre, .textInsideRectangleEstatisticas {
@@ -122,10 +132,6 @@
 .statNumber {
   font-size: 100px; 
   font-weight: bold;
-}
-
-.contentHome {
-  /* Estilos para o conteúdo adicional, se necessário */
 }
 
 /* Ajuste para o Content */
