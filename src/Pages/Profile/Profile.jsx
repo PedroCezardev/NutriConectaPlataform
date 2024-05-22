@@ -3,7 +3,7 @@ import style from "./Profile.module.css";
 import Content from '../../Components/Content/Content';
 import NavBar from '../../Components/Navbar/NavBar';
 import SideBar from '../../Components/SideBar/SideBar';
-import McDonaldsImage from '../../assets/image.Mcdonalds.svg'; 
+import McDonaldsImage from '../../assets/image.Mcdonalds.svg'; // ajuste o caminho conforme necessário
 
 const Profile = () => {
   return (
@@ -70,7 +70,6 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-              <div className={style.contentHome}></div>
             </section>
           </Content>
         </div>
