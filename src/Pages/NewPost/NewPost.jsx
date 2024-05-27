@@ -7,28 +7,29 @@ import SideBar from '../../Components/SideBar/SideBar'
 const NewPost = () => {
   return (
     <>
-    <NavBar />
       <div className={style.body}>
         <SideBar />
 
         <Content> 
-        <section className="container">
-          <div className="slider">
-
-          </div>
-          <div className="title">
-            <h1>Novo Post</h1>
-            <h1>Notificações</h1>
-          </div>
-          <div className="contant-home">
-            <h3>Reginaldo Rossi</h3>
-            <p>lkadsldasdjklajfldhfddkljdskdljhfskdjlfhsdjlkhsdjçgn
-              jsdahgfksdçkhdfghçhgçshsdçdshdsdlsçkdsçllksdfjnlçsdkj
-            </p>
-          </div>
-        </section>
+          <section className={style.container}>
+            <div className={style.slider}></div>
+            <div className={style.title} style={{ paddingLeft: '20px' }}>
+              <h1>Novo Post</h1>
+            </div>
+            <div className={style.rectangleInserirImg}>
+              <p className={style.rectangleTitleInserirImg}>Inserir imagem</p>
+            </div>
+            <div className={style.rectangleTituloDaPublicacao}>
+              <p className={style.rectangleTitlePublic}>Título da publicação</p>
+            </div>
+            <div className={style.rectangleTexto}>
+              <p className={style.rectangleTitleTexto}>Texto</p>
+            </div>
+            <div className={style.rectanglePublicar}> 
+                  <p>Publicar</p>
+                  </div>
+          </section>
         </Content>
-        
       </div>
     </>
   )
