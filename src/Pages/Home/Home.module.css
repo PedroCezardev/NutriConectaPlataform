@@ -173,6 +173,10 @@
     justify-content: space-around;
 }
 
+.description button:hover{
+    background-color: #e65a00;
+}
+
 .description a{
     display: flex;
     align-items: center;

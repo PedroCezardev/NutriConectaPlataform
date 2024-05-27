@@ -31,6 +31,12 @@ html{
   --color-rolagem-trilho: #f1f1f1;
   --color-rolagem-polegar: #cdcdcd;
   --color-rolagem-active: #939393;
+  --color-grafics: #e4e4e4;
+  --color-title-blue: #232F50;
+  --color-grafics-one: #FF901C;
+  --color-grafics-two: #AB3307;
+  --color-grafics-three: #FF6502;
+  --color-grafics-four: #e65a00;
 }
 
 [data-theme='dark'] {
@@ -43,4 +49,10 @@ html{
   --color-icon: #edeffd;
   --color-rolagem-trilho: #282828;
   --color-rolagem-polegar: #5b5b5b;
+  --color-grafics: #282828;
+  --color-title-blue: #fff;
+  --color-grafics-one: #232F50;
+  --color-grafics-two: #43527B;
+  --color-grafics-three: #6D7BA3;
+  --color-grafics-four: #A8B3D0;
 }

@@ -51,9 +51,9 @@ const SideBar = () => {
         <FaInfoCircle className={style.icon} />
           Sobre
         </Link>
-        <Link to="/tutorial">
+        <Link to="/Reportar">
           <MdAssignment className={style.icon} />
-          Tutorial
+          Reportar
         </Link>
       </section>
       <div className={style.logout}>

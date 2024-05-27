@@ -3,6 +3,7 @@ import style from './Disclosures.module.css';
 import { Link } from 'react-router-dom';
 import Content from '../../Components/Content/Content';
 import SideBar from '../../Components/SideBar/SideBar';
+import NavBar from '../../Components/Navbar/NavBar';
 import Padaria from '../../assets/image.Padaria.svg';
 import Mcdonalds from '../../assets/image.Mcdonalds.svg';
 import atacarejo from '../../assets/novoatacarejo.svg';
@@ -72,6 +73,7 @@ const Disclosures = () => {
 
   return (
     <>
+    <NavBar />
       <div className={style.body}>
         <SideBar />
         <Content>
