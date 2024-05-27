@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.header {
+  background-color: #f17022;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.part1 {
+  font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a primeira parte */
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+.part2 {
+  font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a segunda parte */
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px; /* Largura da logo */
+  height: 50px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+
+.nav {
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  overflow: hidden;
+}
+
+.navLink {
+  color: white;
+  font-family: "Alumni Sans", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.loginGetStarted{
+  display: flex;
+  gap: 22px;
+}
+
+.loginButton {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.getStarted {
+  padding-right: 20px;
+}
+
+.getStartedButton {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.homeContainer {
+  padding: 55px;
+  background-color: #f17022;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.imageContainer {
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.textContainer h1 {
+  color: #ffffff;
+  text-align: left;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.textContainer p {
+  color: #ffffff;
+  font-weight: normal;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  text-align: left;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.beneficios {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background-color: #f17022;
+}
+
+.beneficiosContainer {
+  padding: 60px;
+  display: inline-block;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #fff0f0;
+  box-shadow: 5px 5px 10px #00000070;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.beneficiosContainer h2 {
+  color: #000000;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 40px;
+  
+}
+
+.beneficiosContainer p {
+  color: #000000;
+  text-align: justify;
+  font-weight: normal;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 25px;
+}
+
+.diferenciais {
+  top: 100px; /* Ajuste conforme necessário */
+  width: 100%; /* Ajuste conforme necessário */
+  display: flex;
+  background-color: #f17022;
+  padding: 50px;
+  justify-content: space-around;
+  gap: 300px;
+}
+
+.tituloDiferencial {
+  display: flex;
+  align-items: center;
+}
+
+.tituloDiferencial h1 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.feature1 h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.feature2 h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.feature3 h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.feature4 h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.imagemStar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  padding-top: 1px;
+}
+
+.description p{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+}
+
+.linha {
+  background-color: #000;
+  width: 4px;
+  height: 150px;
+  margin-right: 15px;
+}
+
+.linha p {
+  align-items: center;
+  text-align: center;
+  text-align: justify;
+}
+
+.diferencialContainer {
+  background-color: #000;
+}
+
+.novidades {
+  background-color: #f17022;
+  height: 100%;
+  padding-bottom: 15px;
+  padding: 50px;
+}
+
+.tituloNovidade {
+  text-align: center;
+}
+
+.tituloNovidade h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.imagem1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.destaque1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.destaque1 h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.destaque2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.destaque2 h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.destaque3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.destaque3 h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.duvidas {
+  height: 100%; /* Ajuste conforme necessário */
+  display: flex;
+  background-color: #f17022;
+  padding: 50px;
+  justify-content: space-around;
+  gap: 300px;
+}
+
+.tituloDuvidas {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.tituloDuvidas h1{
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/* Novos estilos para perguntas frequentes */
+.duvidasContainer {
+  width: 50%;
+}
+
+.accordion {
+  margin-bottom: 15px;
+}
+
+.duvidasContainer details {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 5px;
+}
+
+.duvidasContainer summary {
+  font-size: 35px;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f17022;
+  color: white;
+  border-radius: 5px;
+  list-style: none;
+  position: relative; /* Adicionado */
+}
+
+.duvidasContainer p {
+  margin: 10px 0 0 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  color: #333;
+}
+
+
+/* teste */
+
+
+.icones {
+  background-color: #f17022;
+  justify-content: end;
+  width: 100%;
+  display: flex;
+}
+
+.icone {
+  padding-left: 1px;
+  color: var(--black);
+  font-size: 26px;
+  margin-right: 15px;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.linhaFooter {
+  background-color: #000000;
+  width: 100%;
+  height: 2px;
+}
+
+.footer {
+  background-color: #f17022;
+}
+
+.footer p {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+}
