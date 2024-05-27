@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './About.module.css';
+import { Link } from "react-router-dom";
 import logo from '../../assets/logo.svg'; // Importando a logo SVG
 import imagem1 from '../../assets/imagemSobre1.png'; // Corrigindo o caminho da imagem
 import imagemStar from '../../assets/star.svg';
@@ -40,10 +41,10 @@ const About = () => {
         </nav>
         <div className={style.loginGetStarted}>
           <div className={style.login}>
-            <a href="/login" className={style.loginButton}>Login</a>
+            <Link to="/login" className={style.loginButton}>Login</Link>
           </div>
           <div className={style.getStarted}>
-            <a href="/login" className={style.getStartedButton}>Get Started</a>
+            <Link to="/login" className={style.getStartedButton}>Get Started</Link>
           </div>
         </div>
       </header>
