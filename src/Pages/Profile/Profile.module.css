@@ -50,18 +50,23 @@
   right: 0px;
   width: 100px;
   height: 29px;
-  background-color: #F17022;
-  color: white;
+  background-color: var(--color-button);
+  color: var(--color-icon);
   display: flex;
   justify-content: center;
   align-items: center; /* Centraliza verticalmente */
   border-radius: 10px;
   z-index: 2;
   margin-left: auto;
+  cursor: pointer;
+}
+
+.rectangleEditar:hover{
+  background-color: #e65a00;
 }
 
 .rectangleEditar p {
-  color: white;
+  color: var(--color-white);
   display: flex; /* Usa flex para alinhar ícone e texto */
   align-items: center; /* Centraliza verticalmente */
   margin: 0; /* Remove margens padrão */
@@ -73,7 +78,7 @@
 
 .rectangleInfo {
   width: 1000px; 
-  background-color: #D4D4D4; 
+  background-color: var(--color-background); 
   margin-top: 30px; /* Espaçamento entre "Gerenciar Conta" e o retângulo */
   padding: 20px; 
   border-radius: 20px; /* Adiciona bordas arredondadas */
@@ -107,7 +112,7 @@
 
 .rectangleSobre, .rectangleEstatisticas {
   width: 48%; 
-  background-color: #D4D4D4; 
+  background-color: var(--color-background); 
   padding: 20px; 
   border-radius: 20px; 
 }

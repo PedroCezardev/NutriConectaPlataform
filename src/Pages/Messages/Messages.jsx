@@ -7,6 +7,7 @@ import SideBar from '../../Components/SideBar/SideBar'
 const Messages = () => {
   return (
     <>
+    <NavBar />
       <div className={style.body}>
         <SideBar />
 

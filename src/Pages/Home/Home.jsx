@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import style from "./Home.module.css";
 import Content from "../../Components/Content/Content";
 import SideBar from '../../Components/SideBar/SideBar';
+import NavBar from '../../Components/Navbar/NavBar';
 
 import { FaHeart } from "react-icons/fa6";
 import { FaCommentDots } from "react-icons/fa";
@@ -25,6 +26,7 @@ import fundo4 from "../../assets/imagemFundo4.svg";
 const Home = () => {
   return (
     <>
+    <NavBar />
       <div className={style.body}>
         <SideBar />
 

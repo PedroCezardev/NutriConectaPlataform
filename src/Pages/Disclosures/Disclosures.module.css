@@ -10,7 +10,7 @@
 }
 .notificationsContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; /* Adiciona quebra de linha para telas menores */
 }
 
@@ -23,7 +23,7 @@
   margin-bottom: 2rem;
   width: calc(50% - 20px); /* Ajuste para duas notificações lado a lado */
   text-align: left;
-  background-color: #e4e4e4;
+  background-color: var(--color-background);
 }
 .header {
   display: flex;
@@ -53,8 +53,9 @@
 .info p {
   width: 15rem;
   font-size: 0.9rem;
-  color: #000000;
+  color: var(--color-black);
 }
+
 .description p {
   min-width: 20rem; /* Define a largura mínima */
   max-width: 100rem; /* Limita a largura máxima */
@@ -70,7 +71,7 @@
   height: 2rem;
   width: 7rem;
   font-size: 1rem;
-  background-color: #f17022;
+  background-color: var(--color-button);
   border: none;
   border-radius: 7px;
   display: flex;
@@ -78,9 +79,13 @@
   justify-content: space-around;
 }
 
+.description button:hover{
+  background-color: #e65a00;
+}
+
 .DataTime {
   font-size: 1rem;
-  color: #6b6b6b;
+  color: var(--color-datatime);
   margin-left: 90%;
   margin-top:10px;
   

@@ -12,7 +12,7 @@
   }
   
   .modalContent {
-    background: white;
+    background: var(--color-white);
     padding: 20px;
     border-radius: 8px;
     width: 500px;
@@ -35,7 +35,7 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: gray;
+    color: var(--color-icon);
   }
   
   .modalBody {
@@ -43,6 +43,15 @@
     display: flex;
     margin-left: 10px; 
 }
+
+.p p{
+  margin: 10px;
+}
+
+span {
+  color: var(--color-icon);
+}
+
 .h2{
   margin: 20px 25px ;
 }
@@ -66,8 +75,8 @@
   .reserveButton {
     padding: 10px 20px;
     border: none;
-    background-color: #ff6f00;
-    color: white;
+    background-color: var(--color-button);
+    color: var(--color-white);
     border-radius: 4px;
     cursor: pointer;
   }

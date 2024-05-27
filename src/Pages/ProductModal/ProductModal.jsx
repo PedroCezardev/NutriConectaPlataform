@@ -16,7 +16,7 @@ const ProductModal = ({ isOpen, onClose, product }) => {
           <h2>{product.name}</h2>
         </div>
         <div className={style.p}>
-        <p>Data de Fabricação: {product.manufactureDate}</p>
+          <p>Data de Fabricação: {product.manufactureDate}</p>
           <p>Data de validade: {product.expiryDate}</p>
           <p>Quantidade Disponível: {product.quantity}</p>
           <h3>Retirada:</h3>
