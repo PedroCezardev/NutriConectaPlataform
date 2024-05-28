@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
 }
+
 .DivLogin{
   background-color: var(--color-background);
   display: flex;

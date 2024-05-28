@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import style from "./Logout.module.css";
 import profile from '../../assets/Profile.svg'
+import imagemFundo from '../../assets/imagemFundoLogout.png'
+import logo from '../../assets/logo.svg';
+import { GiExitDoor } from "react-icons/gi";
 
 const Logout = () => {
   // Lógica para realizar o logout, como limpar o token de autenticação, etc.
@@ -16,8 +19,17 @@ const Logout = () => {
   return (
     <div className={style.divLogout}>
       <section className={style.container}>
+        <div className={style.voltar}>
+        <Link to="/" >
+        <GiExitDoor className={style.iconeVoltar}/>
+        </Link>
+        <h1>Retornar</h1>
+        </div>
         <div className={style.logo}>
-          <img src="./logo.svg" alt="logo" />
+        <img src={logo} alt="Logo" className={style.logoLogout} />
+          <h2>
+            <span className={style.part1}>Nutri</span><span className={style.part2}>CONECTA</span>
+          </h2>
         </div>
         <section className={style.group}>
           <div className={style.title}>
@@ -32,15 +44,15 @@ const Logout = () => {
                 Conectado como <strong>Mininu Ivo</strong>
               </p>
             </div>
-            <Link to="/login" className={style.buttonLink}>
+            <Link to="/about" className={style.buttonLink}>
               <div className={style.button}>
                 <button onClick={handleLogout}>Sair</button>
               </div>
             </Link>
           </section>
           <div className={style.logout}>
-            <div className={style.butao}>
-              <Link to="/login" className={style.button}>
+            <div className={style.botao}>
+              <Link to="/about" className={style.button}>
                 <button onClick={handleLogout}>Sair de todas as contas</button>
               </Link>
             </div>
