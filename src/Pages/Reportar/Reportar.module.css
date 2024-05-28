@@ -71,7 +71,7 @@ input {
 }
 
 .form textarea {
-  height: 20rem; /* Aumenta a altura do textarea */
+  height: 60px; /* Aumenta a altura do textarea */
   border-radius: 8px;
   border: 3px solid #e65a00;
   background-color: #ffffff;
@@ -79,6 +79,7 @@ input {
   padding: 10px 15px;
   resize: none;
   margin-top: 5px;
+  width: 351px;
 }
 
 .submitButton {
