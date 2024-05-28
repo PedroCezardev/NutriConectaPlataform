@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import style from "./Logout.module.css";
 import profile from '../../assets/Profile.svg'
-import imagemFundo from '../../assets/imagemFundoLogout.png'
 import logo from '../../assets/logo.svg';
 import { GiExitDoor } from "react-icons/gi";
 

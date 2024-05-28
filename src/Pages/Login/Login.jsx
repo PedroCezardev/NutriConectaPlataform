@@ -37,7 +37,7 @@ function Login() {
                         <Components.Title>Entrar</Components.Title>
                         <Components.Input type='email' placeholder='Email' />
                         <Components.Input type='password' placeholder='Password' />
-                        <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
+                        <Components.Anchor href='#'>Esqueceu sua senha?</Components.Anchor>
                         <Components.Button onClick={handleSignIn}>Entrar</Components.Button>
                     </Components.Form>
                 </Components.SignInContainer>
@@ -45,7 +45,7 @@ function Login() {
                 <Components.OverlayContainer signinIn={signIn}>
                     <Components.Overlay signinIn={signIn}>
                         <Components.LeftOverlayPanel signinIn={signIn}>
-                            <Components.Title>Welcome Back!</Components.Title>
+                            <Components.Title>Bem vindo de volta!</Components.Title>
                             <Components.Paragraph>
                                 To keep connected with us please login with your personal info
                             </Components.Paragraph>

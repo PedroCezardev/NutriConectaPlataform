@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React from 'react';
 import style from './About.module.css';
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.svg'; // Importando a logo SVG
@@ -26,49 +25,6 @@ const scrollToSection = (id) => {
 }
 
 const About = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const { name, email, subject, message } = formData;
-
-    if (name === '' || email === '' || subject === '' || message === '') {
-      setErrorMessage('Preencha todos os campos obrigatórios 😉');
-    } else {
-      emailjs.sendForm('outlookMessageReport', 'template_ihzie28', e.target, 'XAvL7RxhjDLFfUFEm')
-        .then(() => {
-          setErrorMessage('Mensagem enviada com sucesso! ✔️');
-          setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-          });
-
-          setTimeout(() => {
-            setErrorMessage('');
-          }, 5000);
-        }, (error) => {
-          alert('Oxe! Alguma coisa aconteceu de errado...', error);
-        });
-    }
-  };
-
   return (
     <>
       <header className={style.header}>
