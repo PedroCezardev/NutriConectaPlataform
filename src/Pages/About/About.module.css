@@ -60,7 +60,7 @@
   text-decoration: underline;
 }
 
-.loginGetStarted{
+.loginGetStarted {
   display: flex;
   gap: 22px;
 }
@@ -96,16 +96,23 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  gap: 50px; /* Espaçamento entre a imagem e o texto */
   width: 100%;
   align-items: center;
+  height: 100%;
+  margin-top: 70px;
+}
+
+.imageContainer {
+  width: 100%;
   height: 100%;
   margin-top: 50px;
 }
 
-.imageContainer {
-  margin-bottom: 20px;
-  justify-content: space-between;
+.imagemHome {
+  border-radius: 10px;
+  width: 860px;
+  height: 630px;
 }
 
 .textContainer h1 {
@@ -123,13 +130,12 @@
   color: #ffffff;
   font-weight: normal;
   line-height: 1.6;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 15px;
-  justify-content: space-between;
-  text-align: left;
   font-family: "Alumni Sans", sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   color: rgb(255, 255, 255);
+  padding-right: 25px;
 }
 
 .beneficios {
@@ -167,7 +173,6 @@
   text-transform: uppercase;
   font-family: "Alumni Sans", sans-serif;
   font-size: 40px;
-  
 }
 
 .beneficiosContainer p {
@@ -175,7 +180,7 @@
   text-align: justify;
   font-weight: normal;
   font-family: "Alumni Sans", sans-serif;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .diferenciais {
@@ -183,7 +188,7 @@
   width: 100%; /* Ajuste conforme necessário */
   display: flex;
   background-color: #f17022;
-  padding: 50px;
+  padding: 30px;
   justify-content: space-around;
   gap: 300px;
 }
@@ -191,37 +196,39 @@
 .tituloDiferencial {
   display: flex;
   align-items: center;
+  margin-left: 80px;
+  width: 50%;
 }
 
 .tituloDiferencial h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
-.feature1 h1{
+.feature1 h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
-.feature2 h1{
+.feature2 h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
-.feature3 h1{
+.feature3 h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
-.feature4 h1{
+.feature4 h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -229,23 +236,23 @@
 .imagemStar {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .description {
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 27px;
   padding-bottom: 25px;
-  padding-top: 1px;
+  padding-top: 10px;
 }
 
-.description p{
+.description p {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: normal;
   color: rgb(255, 255, 255);
-  padding-left: 20px;
+  padding-top: 0px;
 }
 
 .linha {
@@ -261,10 +268,6 @@
   text-align: justify;
 }
 
-.diferencialContainer {
-  background-color: #000;
-}
-
 .novidades {
   background-color: #f17022;
   height: 100%;
@@ -276,9 +279,9 @@
   text-align: center;
 }
 
-.tituloNovidade h1{
+.tituloNovidade h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -296,9 +299,9 @@
   margin-top: 30px;
 }
 
-.destaque1 h1{
+.destaque1 h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -308,9 +311,9 @@
   margin-top: 30px;
 }
 
-.destaque2 h1{
+.destaque2 h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -320,9 +323,9 @@
   margin-top: 30px;
 }
 
-.destaque3 h1{
+.destaque3 h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -342,16 +345,30 @@
   display: flex;
 }
 
-.tituloDuvidas h1{
+.tituloDuvidas h1 {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
 /* Novos estilos para perguntas frequentes */
+/* Novos estilos para perguntas frequentes */
 .duvidasContainer {
   width: 50%;
+  color: #000; /* Define a cor padrão para o texto */
+}
+
+.accTitle {
+  color: black;
+}
+
+.expandIcon {
+  color: #000000; /* Define a cor do ícone como preto */
+}
+
+.accordionDetails {
+  color: black !important; /* Aplica a cor preta aos detalhes */
 }
 
 .accordion {
@@ -361,7 +378,7 @@
 .duvidasContainer details {
   margin-bottom: 10px;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #f30000;
   padding: 5px;
 }
 
@@ -372,7 +389,7 @@
   cursor: pointer;
   padding: 10px;
   background-color: #f17022;
-  color: white;
+  color: black !important; /* Adiciona a cor preta aos títulos */
   border-radius: 5px;
   list-style: none;
   position: relative; /* Adicionado */
@@ -386,9 +403,166 @@
   color: #333;
 }
 
-
 /* teste */
+/* Time */
+.time {
+  width: 100%;
+  height: 500px;
+  background-color: #f17022;
+}
 
+.timeTitulo {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #f17022;
+}
+
+.timeTitulo h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: white;
+}
+
+.containerTime {
+  height: 500px;
+  width: 100%;
+  background-color: #f17022;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+
+.timeIntegrante1 {
+  margin-left: 50px;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 8px;
+  margin-right: 50px;
+  background-color: #fff0f0;
+  box-shadow: 5px 5px 10px #00000070;
+  overflow: hidden;
+  align-items: center;
+  height: 380px;
+  width: 50%;
+}
+
+.timeIntegrante1 h1, .timeIntegrante2 h1, .timeIntegrante3 h1, .timeIntegrante4 h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  font-size: 50px;
+}
+
+.timeIntegrante1 p, .timeIntegrante2 p, .timeIntegrante3 p, .timeIntegrante4 p {
+  text-align: center;
+  padding-top: 0px;
+  font-family: "Alumni Sans", sans-serif;
+  width: 100%;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.fotoIntegrante1 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.fotoTeste {
+  width: 160px;
+  border-radius: 100%;
+}
+
+.timeIntegrante2 {
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 8px;
+  margin-right: 50px;
+  background-color: #fff0f0;
+  box-shadow: 5px 5px 10px #00000070;
+  overflow: hidden;
+  align-items: center;
+  height: 380px;
+  width: 50%;
+}
+
+.fotoIntegrante2 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.timeIntegrante3 {
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 8px;
+  margin-right: 50px;
+  background-color: #fff0f0;
+  box-shadow: 5px 5px 10px #00000070;
+  overflow: hidden;
+  align-items: center;
+  height: 380px;
+  width: 50%;
+}
+
+.fotoIntegrante3 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.timeIntegrante4 {
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 8px;
+  margin-right: 50px;
+  background-color: #fff0f0;
+  box-shadow: 5px 5px 10px #00000070;
+  overflow: hidden;
+  align-items: center;
+  height: 380px;
+  width: 50%;
+}
+/*  
+  border-radius: 8px;
+  background-color: #fff0f0;
+  box-shadow: 5px 5px 10px #00000070;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  */
+
+.fotoIntegrante4 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.linkTime {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  justify-content: center;
+  color: #f17022;
+}
+
+.iconeTime {
+  padding-left: 1px;
+  color: #f17022;
+  font-size: 26px;
+  margin-right: 15px;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+/*  */
 
 .icones {
   background-color: #f17022;
@@ -399,7 +573,7 @@
 
 .icone {
   padding-left: 1px;
-  color: var(--black);
+  color: black;
   font-size: 26px;
   margin-right: 15px;
   cursor: pointer;
