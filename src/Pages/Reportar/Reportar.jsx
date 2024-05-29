@@ -13,6 +13,7 @@ const Tutorial = () => {
     subject: '',
     message: ''
   });
+  
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
@@ -57,9 +58,7 @@ const Tutorial = () => {
         <SideBar />
         <Content>
           <div className={style.reportar}>
-          <h1>
-            Reportar
-          </h1> 
+          <h1> Reportar </h1>   
           </div>
           <div className={style.formContainer}>
             <div className={style.informacoesContato}>

@@ -56,7 +56,6 @@ const About = () => {
       </header>
       <div id="home" className={style.homeContainer}>
         <div className={style.textContainer}>
-          <h1></h1>
           <p>
             O desperdício de alimentos é uma preocupação global que afeta não apenas a
             segurança alimentar, mas também contribui significativamente para questões

@@ -18,10 +18,9 @@ const SideBar = () => {
     <div className={style.sidebar}>
       <header className={style.profile}>
         <div>
-          <Link to="/Profile">
+          <Link to="/Profile" style={{ textDecoration: 'none', color: 'black' }}>
             <img src={Profile} alt="" />
-            <p>Olá!</p>
-            <h3>Minino Ivo</h3>
+            <h1>Olá! <br></br> Minino Ivo</h1>
           </Link>
         </div>
       </header>
