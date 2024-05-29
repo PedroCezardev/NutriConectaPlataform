@@ -24,7 +24,7 @@ function Login() {
             <Components.Container>
                 <Components.SignUpContainer signinIn={signIn}>
                     <Components.Form>
-                        <Components.Title>Create Account</Components.Title>
+                        <Components.Title>Criar conta</Components.Title>
                         <Components.Input type='text' placeholder='Name' />
                         <Components.Input type='email' placeholder='Email' />
                         <Components.Input type='password' placeholder='Password' />
@@ -47,20 +47,20 @@ function Login() {
                         <Components.LeftOverlayPanel signinIn={signIn}>
                             <Components.Title>Bem vindo de volta!</Components.Title>
                             <Components.Paragraph>
-                                To keep connected with us please login with your personal info
+                                Possui uma conta? faça login com suas credenciais cadastradas!
                             </Components.Paragraph>
                             <Components.GhostButton onClick={() => toggle(true)}>
-                                Sign In
+                                Entrar
                             </Components.GhostButton>
                         </Components.LeftOverlayPanel>
 
                         <Components.RightOverlayPanel signinIn={signIn}>
-                            <Components.Title>Hello, Friend!</Components.Title>
-                            <Components.Paragraph>
-                                Enter your personal details and start your journey with us
+                            <Components.Title>Olá, não possui conta?</Components.Title>
+                            <Components.Paragraph>                              
+                                Aproveite! Inicie agora e comece sua jornada conosco
                             </Components.Paragraph>
                             <Components.GhostButton onClick={() => toggle(false)}>
-                                Sign Up
+                                Criar conta
                             </Components.GhostButton>
                         </Components.RightOverlayPanel>
                     </Components.Overlay>
