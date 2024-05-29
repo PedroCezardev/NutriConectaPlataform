@@ -446,20 +446,41 @@
   box-shadow: 5px 5px 10px #00000070;
   overflow: hidden;
   align-items: center;
-  height: 380px;
+  height: 410px;
   width: 50%;
 }
 
-.timeIntegrante1 h1, .timeIntegrante2 h1, .timeIntegrante3 h1, .timeIntegrante4 h1 {
+.timeIntegrante1 h1,
+.timeIntegrante2 h1 {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 31px;
   font-family: "Alumni Sans", sans-serif;
   font-weight: bold;
   width: 100%;
   font-size: 50px;
 }
 
-.timeIntegrante1 p, .timeIntegrante2 p, .timeIntegrante3 p, .timeIntegrante4 p {
+.timeIntegrante3 h1 {
+  text-align: center;
+  padding-top: 6px;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  font-size: 50px;
+}
+
+.timeIntegrante4 h1 {
+  text-align: center;
+  padding-top: 8px;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  font-size: 50px;
+}
+.timeIntegrante1 p,
+.timeIntegrante2 p,
+.timeIntegrante3 p,
+.timeIntegrante4 p {
   text-align: center;
   padding-top: 0px;
   font-family: "Alumni Sans", sans-serif;
@@ -470,6 +491,7 @@
 
 .fotoIntegrante1 {
   width: 100%;
+  height: 53%;
   justify-content: center;
   display: flex;
 }
@@ -488,7 +510,7 @@
   box-shadow: 5px 5px 10px #00000070;
   overflow: hidden;
   align-items: center;
-  height: 380px;
+  height: 410px;
   width: 50%;
 }
 
@@ -507,7 +529,7 @@
   box-shadow: 5px 5px 10px #00000070;
   overflow: hidden;
   align-items: center;
-  height: 380px;
+  height: 410px;
   width: 50%;
 }
 
@@ -526,7 +548,7 @@
   box-shadow: 5px 5px 10px #00000070;
   overflow: hidden;
   align-items: center;
-  height: 380px;
+  height: 410px;
   width: 50%;
 }
 /*  

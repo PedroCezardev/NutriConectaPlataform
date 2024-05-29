@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/logo.svg'; // Importando a logo SVG
 import imagem1 from '../../assets/imagemSobre1.png';
 import imagemJhones from '../../assets/fotoTeste.jpg';
+import imagemGio from '../../assets/fotoGio.jpg';
+import imagemMay from '../../assets/fotoMay.jpg';
+import imagemPedro from '../../assets/fotoPedro.jpg';
 import imagemHome from '../../assets/imagemHome.jpg'; // Corrigindo o caminho da imagem
 import imagemStar from '../../assets/star.svg';
 import imagemOds2 from '../../assets/ods2.svg';
@@ -205,19 +208,16 @@ const About = () => {
 
           <div className={style.timeIntegrante1}>
             <div className={style.fotoIntegrante1}>
-              <img src={imagemJhones} alt="Imagem diferencial2" className={style.fotoTeste} />
+              <img src={imagemGio} alt="Imagem diferencial2" className={style.fotoTeste} />
             </div>
-            <h1> Jhones Silva </h1>
+            <h1> Giovanna Gabriela </h1>
             <p> Web developer </p>
 
             <div className={style.linkTime}>
-              <a href='https://www.instagram.com/jhon_devp/' target='_blank' rel='noopener noreferrer'>
-                <FaInstagram className={style.iconeTime} />
-              </a>
-              <a href='https://github.com/PedroCezardev/NutriConectaPlataform' target='_blank' rel='noopener noreferrer'>
+              <a href='https://github.com/GiovannaGabriela' target='_blank' rel='noopener noreferrer'>
                 <FaGithub className={style.iconeTime} />
               </a>
-              <a href='https://www.linkedin.com/in/jhonesbonifaciodasilva/' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.linkedin.com/in/giovanna-gabriela-44b726270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' target='_blank' rel='noopener noreferrer'>
                 <FaLinkedin className={style.iconeTime} />
               </a>
           </div>
@@ -233,7 +233,7 @@ const About = () => {
             <a href='https://www.instagram.com/jhon_devp/' target='_blank' rel='noopener noreferrer'>
               <FaInstagram className={style.iconeTime} />
             </a>
-            <a href='https://github.com/PedroCezardev/NutriConectaPlataform' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/JhonB-DEVLP' target='_blank' rel='noopener noreferrer'>
               <FaGithub className={style.iconeTime} />
             </a>
             <a href='https://www.linkedin.com/in/jhonesbonifaciodasilva/' target='_blank' rel='noopener noreferrer'>
@@ -243,19 +243,19 @@ const About = () => {
         </div>
         <div className={style.timeIntegrante3}>
           <div className={style.fotoIntegrante3}>
-            <img src={imagemJhones} alt="Imagem diferencial2" className={style.fotoTeste} />
+            <img src={imagemMay} alt="Imagem diferencial2" className={style.fotoTeste} />
           </div>
-          <h1> Jhones Silva </h1>
+          <h1> Mayara Wyrla </h1>
           <p> Web developer </p>
 
           <div className={style.linkTime}>
-            <a href='https://www.instagram.com/jhon_devp/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://www.instagram.com/_mayaranascimentoo?igsh=b3p4dmZteXdmaXVy' target='_blank' rel='noopener noreferrer'>
               <FaInstagram className={style.iconeTime} />
             </a>
-            <a href='https://github.com/PedroCezardev/NutriConectaPlataform' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/Mayaranasciment0' target='_blank' rel='noopener noreferrer'>
               <FaGithub className={style.iconeTime} />
             </a>
-            <a href='https://www.linkedin.com/in/jhonesbonifaciodasilva/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://www.linkedin.com/in/mayarawyrlanascimento' target='_blank' rel='noopener noreferrer'>
               <FaLinkedin className={style.iconeTime} />
             </a>
           </div>
@@ -264,18 +264,18 @@ const About = () => {
 
         <div className={style.timeIntegrante4}>
           <div className={style.fotoIntegrante4}>
-            <img src={imagemJhones} alt="Imagem diferencial2" className={style.fotoTeste} />
+            <img src={imagemPedro} alt="Imagem diferencial2" className={style.fotoTeste} />
           </div>
-          <h1> Jhones Silva </h1>
+          <h1> Pedro Cezar </h1>
           <p> Web developer </p>
           <div className={style.linkTime}>
-            <a href='https://www.instagram.com/jhon_devp/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://www.instagram.com/_pedrodev0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' rel='noopener noreferrer'>
               <FaInstagram className={style.iconeTime} />
             </a>
-            <a href='https://github.com/PedroCezardev/NutriConectaPlataform' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/PedroCezardev' target='_blank' rel='noopener noreferrer'>
               <FaGithub className={style.iconeTime} />
             </a>
-            <a href='https://www.linkedin.com/in/jhonesbonifaciodasilva/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://www.linkedin.com/in/pedro-cezarr/' target='_blank' rel='noopener noreferrer'>
               <FaLinkedin className={style.iconeTime} />
             </a>
           </div>
@@ -349,8 +349,7 @@ const About = () => {
               <span className={style.accTitle}>Quais são os tipos de usuários que a plataforma nutriConecta tem?</span>
             </AccordionSummary>
             <AccordionDetails className={style.accordionDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              Temos dois tipos de usuários: Empresas que possuem interesse em realizar distribuição de alimento que estejam perto do prazo de validade ou não, Ongs que realizam doações de alimentos para pessoas que moram nas ruas e também temos ongs que recolhem alimentos que não podem ser consumidos mas podem ser utilizados na adubagem.
             </AccordionDetails>
           </Accordion>
         </div>

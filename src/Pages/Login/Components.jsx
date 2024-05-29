@@ -58,7 +58,7 @@ color: #000000;
 `;
 
 export const Input = styled.input`
-background-color: #eee;
+background-color: #d9d9d9;
 border: none;
 padding: 12px 15px;
 margin: 8px 0;
@@ -90,7 +90,7 @@ border-color: #ffffff;
 `;
 
 export const Anchor = styled.a`
-color: #333;
+color: #000000;
 font-size: 14px;
 text-decoration: none;
 margin: 15px 0;
