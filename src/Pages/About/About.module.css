@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .header {
   background-color: #f17022;
@@ -15,14 +14,14 @@
 }
 
 .part1 {
-  font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a primeira parte */
+  font-family: "Montserrat", sans-serif; /* Exemplo de fonte para a primeira parte */
   font-weight: normal;
   color: rgb(255, 255, 255);
   font-size: 40px;
 }
 
 .part2 {
-  font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a segunda parte */
+  font-family: "Montserrat", sans-serif; /* Exemplo de fonte para a segunda parte */
   font-weight: bold;
   color: rgb(255, 255, 255);
   font-size: 40px;
@@ -50,10 +49,11 @@
 
 .navLink {
   color: white;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
   cursor: pointer;
   text-decoration: none;
-  margin: 20px;
+  margin: 15px;
 }
 
 .navLink:hover {
@@ -106,7 +106,7 @@
 .imageContainer {
   width: 100%;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .imagemHome {
@@ -115,26 +115,14 @@
   height: 630px;
 }
 
-.textContainer h1 {
-  color: #ffffff;
-  text-align: left;
-  justify-content: space-between;
-  padding-bottom: 15px;
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-}
-
 .textContainer p {
   color: #ffffff;
   font-weight: normal;
   line-height: 1.6;
   text-align: justify;
   margin-bottom: 15px;
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
   padding-right: 25px;
 }
 
@@ -171,16 +159,16 @@
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
 }
 
 .beneficiosContainer p {
   color: #000000;
   text-align: justify;
   font-weight: normal;
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 .diferenciais {
@@ -201,34 +189,34 @@
 }
 
 .tituloDiferencial h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
 .feature1 h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
 .feature2 h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 .feature3 h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 .feature4 h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -248,8 +236,8 @@
 }
 
 .description p {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
   font-weight: normal;
   color: rgb(255, 255, 255);
   padding-top: 0px;
@@ -280,8 +268,8 @@
 }
 
 .tituloNovidade h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -300,8 +288,8 @@
 }
 
 .destaque1 h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -312,8 +300,8 @@
 }
 
 .destaque2 h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -324,8 +312,8 @@
 }
 
 .destaque3 h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -346,8 +334,8 @@
 }
 
 .tituloDuvidas h1 {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
@@ -384,7 +372,7 @@
 
 .duvidasContainer summary {
   font-size: 35px;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   cursor: pointer;
   padding: 10px;
@@ -421,9 +409,9 @@
 .timeTitulo h1 {
   width: 100%;
   text-align: center;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 60px;
   color: white;
 }
 
@@ -453,37 +441,38 @@
 .timeIntegrante1 h1,
 .timeIntegrante2 h1 {
   text-align: center;
-  padding-top: 31px;
-  font-family: "Alumni Sans", sans-serif;
+  padding-top: 37px;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   width: 100%;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 .timeIntegrante3 h1 {
   text-align: center;
-  padding-top: 6px;
-  font-family: "Alumni Sans", sans-serif;
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   width: 100%;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 .timeIntegrante4 h1 {
   text-align: center;
-  padding-top: 8px;
-  font-family: "Alumni Sans", sans-serif;
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   width: 100%;
-  font-size: 50px;
+  font-size: 25px;
 }
+
 .timeIntegrante1 p,
 .timeIntegrante2 p,
 .timeIntegrante3 p,
 .timeIntegrante4 p {
   text-align: center;
   padding-top: 0px;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   font-size: 35px;
   font-weight: normal;

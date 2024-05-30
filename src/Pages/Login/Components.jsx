@@ -152,9 +152,10 @@ export const RightOverlayPanel = styled(OverlayPanel)`
 `;
 
 export const Paragraph = styled.p`
-font-size: 14px;
-  font-weight: 100;
-  line-height: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
   letter-spacing: 0.5px;
-  margin: 20px 0 30px
+  margin: 20px 0 30px;
+  color: #000000;
 `;

@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import style from "./Navbar.module.css";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
+import logo from '../../assets/logo.svg';
 
 const NavBar = () => {
-    // Função para obter o tema do localStorage ou usar o tema padrão 'light'
+  // Função para obter o tema do localStorage ou usar o tema padrão 'light'
   const getInitialTheme = () => {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme ? savedTheme : 'light';
@@ -29,14 +30,17 @@ const NavBar = () => {
   return (
     <header className={style.navbar__Navbar}>
       <div className={style.logo}>
-        <h1>NutriConecta</h1>
+        <img src={logo} alt="Logo" className={style.logo} />
+        <h1>
+          <span className={style.part1}>Nutri</span><span className={style.part2}>CONECTA</span>
+        </h1>
       </div>
 
       <div className={style.menu}>
         <div className={style.darkMode}>
           <button className={style.button} onClick={toggleTheme} >
-            {theme === 'light' ? 
-              <MdDarkMode className={style.icon} /> : 
+            {theme === 'light' ?
+              <MdDarkMode className={style.icon} /> :
               <MdLightMode className={style.iconActive} />}
           </button>
         </div>
