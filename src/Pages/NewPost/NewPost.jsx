@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import style from "./NewPost.module.css";
+import style from "./Newpost.module.css";
 import SideBar from '../../Components/SideBar/SideBar';
 import Content from '../../Components/Content/Content';
 import NavBar from '../../Components/Navbar/NavBar';
