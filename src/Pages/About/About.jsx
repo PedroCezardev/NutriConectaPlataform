@@ -102,7 +102,7 @@ const About = () => {
             <div className={style.imagemOds}>
               <div className={style.odsIcon}>
                 <img src={imagemOds12} alt="Imagem diferencial1" className={style.star} />
-                <h2>Benefícios da ods 12</h2>
+                <h2>Benefícios da ods 12:</h2>
               </div>
               <p>A nossa plataforma visa promover o consumo e a produção responsáveis, reduzindo o
                 desperdício de alimentos por meio de práticas comerciais mais sustentáveis,
@@ -115,7 +115,7 @@ const About = () => {
             <div className={style.imagemOds}>
               <div className={style.odsIcon}></div>
               <img src={imagemOds15} alt="Imagem diferencial1" className={style.star} />
-              <h2>Benefícios da ods 15</h2>
+              <h2>Benefícios da ods 15:</h2>
 
               <p>Contribuimos para a preservação da vida
                 terrestre, um dos objetivos do ODS 15. Ao evitar o descarte de alimentos, a
