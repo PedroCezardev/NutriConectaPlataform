@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .header {
-  background-color: #f17022;
+  background-color: var(--color-orange);
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -9,22 +10,23 @@
   color: white;
   position: fixed;
   width: 100%;
-  top: 0%;
+  top: 0;
   padding-top: 15px;
+  width: 100%;
 }
 
 .part1 {
-  font-family: "Montserrat", sans-serif; /* Exemplo de fonte para a primeira parte */
+  font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a primeira parte */
   font-weight: normal;
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 42px;
 }
 
 .part2 {
-  font-family: "Montserrat", sans-serif; /* Exemplo de fonte para a segunda parte */
+  font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a segunda parte */
   font-weight: bold;
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 42px;
 }
 
 .logoContainer {
@@ -42,15 +44,14 @@
 
 .nav {
   align-items: center;
-  text-align: center;
-  font-size: 35px;
   overflow: hidden;
 }
 
 .navLink {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 25px;
   cursor: pointer;
   text-decoration: none;
   margin: 15px;
@@ -606,4 +607,504 @@
   color: rgb(255, 255, 255);
   text-align: center;
   font-weight: bold;
+}
+
+/* Tela de notebook */
+@media screen and (max-width: 1500px) {  
+  
+  .part1 {
+    font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a primeira parte */
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+  }
+  
+  .part2 {
+    font-family: "Alumni Sans", sans-serif; /* Exemplo de fonte para a segunda parte */
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+  }
+
+  .navLink {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 12px;
+  }
+  
+  .loginGetStarted {
+    display: flex;
+    gap: 22px;
+  }
+  
+  .loginButton {
+    color: black !important;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .getStartedButton {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .homeContainer {
+    padding: 55px;
+    background-color: #f17022;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 50px; /* Espaçamento entre a imagem e o texto */
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    margin-top: 70px;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagemHome {
+    border-radius: 10px;
+    width: 520px;
+    height: 400px;
+  }
+  
+  .textContainer p {
+    color: #ffffff;
+    font-weight: 400;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    padding-right: 25px;
+  }
+
+  .card {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #fff0f0;
+    box-shadow: 5px 5px 10px #00000070;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .beneficiosContainer h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+  }
+  
+  .beneficiosContainer p {
+    color: #000000;
+    text-align: justify;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+  }
+
+  .diferenciais {
+    top: 100px; /* Ajuste conforme necessário */
+    width: 100%; /* Ajuste conforme necessário */
+    display: flex;
+    background-color: #f17022;
+    padding: 30px;
+    justify-content: space-around;
+    gap: 100px;
+  }
+  
+  .tituloDiferencial {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    width: 50%;
+  }
+  
+  .tituloDiferencial h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .feature1 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .feature2 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  .feature3 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  .feature4 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .imagemStar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .description {
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+  }
+  
+  .description p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding-top: 0px;
+  }
+  
+  .linha {
+    background-color: #000;
+    width: 4px;
+    height: 150px;
+    margin-right: 15px;
+  }
+  
+  .linha p {
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .tituloNovidade h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .imagem1 {
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 600px;
+    height: 500px;
+  }
+  
+  .destaque1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .destaque1 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .destaque2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .destaque2 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .destaque3 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .destaque3 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .timeTitulo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #f17022;
+  }
+  
+  .timeTitulo h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    color: white;
+  }
+  
+  .containerTime {
+    height: 500px;
+    width: 100%;
+    background-color: #f17022;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .timeIntegrante1 {
+    margin-left: 50px;
+    padding: 25px;
+    border-radius: 8px;
+    margin-right: 50px;
+    background-color: #fff0f0;
+    box-shadow: 5px 5px 10px #00000070;
+    overflow: hidden;
+    align-items: center;
+    height: 380px;
+    width: 100%;
+  }
+  
+  .timeIntegrante1 h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    width: 100%;
+    font-size: 17px;
+    margin-top: 15px;
+  }
+
+  .timeIntegrante2 h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    width: 100%;
+    font-size: 17px;
+  }
+  
+  .timeIntegrante3 h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    width: 100%;
+    font-size: 17px;
+}
+  
+  .timeIntegrante4 h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    width: 100%;
+    font-size: 17px;
+  }
+  
+  .timeIntegrante1 p,
+  .timeIntegrante2 p,
+  .timeIntegrante3 p,
+  .timeIntegrante4 p {
+    text-align: center;
+    padding-top: 0px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    font-size: 17px;
+    font-weight: normal;
+  }
+  
+  .fotoIntegrante1 {
+    width: 100%;
+    height: 53%;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .fotoTeste {
+    width: 160px;
+    border-radius: 100%;
+  }
+  
+  .timeIntegrante2 {
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin-right: 50px;
+    background-color: #fff0f0;
+    box-shadow: 5px 5px 10px #00000070;
+    overflow: hidden;
+    align-items: center;
+    height: 380px;
+    width: 100%;
+  }
+  
+  .fotoIntegrante2 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .timeIntegrante3 {
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin-right: 50px;
+    background-color: #fff0f0;
+    box-shadow: 5px 5px 10px #00000070;
+    overflow: hidden;
+    align-items: center;
+    height: 380px;
+    width: 100%;
+  }
+  
+  .fotoIntegrante3 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .timeIntegrante4 {
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin-right: 50px;
+    background-color: #fff0f0;
+    box-shadow: 5px 5px 10px #00000070;
+    overflow: hidden;
+    align-items: center;
+    height: 380px;
+    width: 100%;
+  }
+
+  .fotoIntegrante4 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .linkTime {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    justify-content: center;
+    color: #f17022;
+  }
+  
+  .iconeTime {
+    padding-left: 1px;
+    color: #f17022;
+    font-size: 26px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .duvidas {
+    height: 100%; /* Ajuste conforme necessário */
+    display: flex;
+    background-color: #f17022;
+    padding: 50px;
+    justify-content: space-around;
+    gap: 100px;
+  }
+  
+  .tituloDuvidas {
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .tituloDuvidas h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+
+  .duvidasContainer {
+    width: 100%;
+    color: #000; /* Define a cor padrão para o texto */
+  }
+  
+  .accTitle {
+    color: black;
+  }
+  
+  .expandIcon {
+    color: #000000; /* Define a cor do ícone como preto */
+  }
+  
+  .accordionDetails {
+    color: black !important; /* Aplica a cor preta aos detalhes */
+  }
+  
+  .accordion {
+    width: 100%;
+    overflow: hidden;
+    margin-right: 50px;
+    }
+  
+  .duvidasContainer details {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f30000;
+    padding: 5px;
+  }
+  
+  .duvidasContainer summary {
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f17022;
+    color: black !important; /* Adiciona a cor preta aos títulos */
+    border-radius: 5px;
+    list-style: none;
+  }
+  
+  .duvidasContainer p {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #333;
+  }
+
 }
