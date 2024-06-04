@@ -8,7 +8,9 @@ import Padaria from '../../assets/image.Padaria.svg';
 import Mcdonalds from '../../assets/image.Mcdonalds.svg';
 import atacarejo from '../../assets/novoatacarejo.svg';
 import paodeaçucar from '../../assets/pãodeaçucar.svg';
+import Divulgacoes from '../../assets/Divulgacoes.svg';
 import ProductModal from '../ProductModal/ProductModal';
+import AddDonation from '../AddDonation/AddDonation';
 
 const Disclosures = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,8 +46,8 @@ const Disclosures = () => {
       expiryDate: '20/05/2024',
       quantity: '10 unidades',
       description: 'Após a data de válidade os alimentos não resgatados serão destinados a compostagem.',
-      address: 'R. Cruzeiro do Forte, 242 - Boa Viagem, Recife - PE, 51030-620',
-      phone: '(81) 98708-7305'
+      address: 'Av. Eng. Abdias de Carvalho, 336 - LUC 01 - Madalena, Recife - PE, 50750-500',
+      phone: ': 0800 888 1955'
     },
     {
       postedDate: '15/05/2024',
@@ -55,8 +57,8 @@ const Disclosures = () => {
       expiryDate: '20/05/2024',
       quantity: '10 unidades',
       description: 'Após a data de válidade os alimentos não resgatados serão destinados a compostagem.',
-      address: 'R. Cruzeiro do Forte, 242 - Boa Viagem, Recife - PE, 51030-620',
-      phone: '(81) 98708-7305'
+      address: 'Rua Desembargador Góis Cavalcante, 261 - Parnamirim, Recife - PE, 52060-140',
+      phone: '0800 779 6761'
     },
     {
       postedDate: '15/05/2024',
@@ -66,11 +68,11 @@ const Disclosures = () => {
       expiryDate: '20/05/2024',
       quantity: '10 unidades',
       description: 'Após a data de válidade os alimentos não resgatados serão destinados a compostagem.',
-      address: 'R. Cruzeiro do Forte, 242 - Boa Viagem, Recife - PE, 51030-620',
-      phone: '(81) 98708-7305'
+      address: 'Estr. dos Remédios, 669 - Afogados, Recife - PE, 50750-360',
+      phone: 'Telefone: (81) 98146-3261'
     },
   ];
-
+  
   return (
     <>
     <NavBar />
@@ -78,6 +80,10 @@ const Disclosures = () => {
         <SideBar />
         <Content>
           <section className={style.Information}>
+          <div className={style.newContainer}>
+              <img src={Divulgacoes} alt="Nova Imagem" className={style.imgprincipal} />
+                <Link to="/AddDonation" className={style.botaoNovo}>Novo</Link>
+            </div>
             <div className={style.notificationsContainer}>
               {products.map((product, index) => (
                 <div key={index} className={style.Notification}>

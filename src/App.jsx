@@ -13,6 +13,7 @@ import Messages from "./Pages/Messages/Messages";
 import Login from "./Pages/Login/Login";
 import Logout from "./Pages/Logout/Logout";
 import ProductModal from './Pages/ProductModal/ProductModal'
+import AddDonation from './Pages/AddDonation/AddDonation';
 import NotFound from './Pages/PageNotfound/PageNotFound';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/logout' element={<Logout />} />
             <Route path='/productmodal' element={<ProductModal />} />
+            <Route path='/adddonation' element={<AddDonation />} />
             <Route path= "*" element={<NotFound />} />
         </Routes>
     </>

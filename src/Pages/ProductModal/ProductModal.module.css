@@ -36,8 +36,11 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--color-icon);
+    transition: 0.3s;
+  }  
+  .closeButton:hover{
+    background-color: rgb(230, 7, 7);
   }
-  
   .modalBody {
     text-align: left;
     display: flex;
