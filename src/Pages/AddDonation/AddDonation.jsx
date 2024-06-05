@@ -73,19 +73,19 @@ const AddDonation = () => {
           </div>
           <div className={style.form}>
             <form onSubmit={handleSubmit}>
-              <div className={style.inputTitle}>
+              <div className={style.inputNomeAlimento}>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Nome do alimento disponível"
+                  placeholder="Nome do alimento"
                   required
                 />
               </div>
-              <div className={`${style.inputDate} ${style.formItem}`}> 
-              <label htmlFor="manufactureDate">Data de Fabricação</label>
+              <div className={style.inputDateFab}> 
+              <h1> Data de fabricação </h1>
                 <input
                   type="date"
                   id="manufactureDate"
@@ -95,8 +95,8 @@ const AddDonation = () => {
                   required
                 />
               </div>
-              <div className={style.inputDate}>
-                <label htmlFor="expiryDate">Data de Validade</label>
+              <div className={style.inputDateVal}>
+                <h1>Data de validade</h1>
                 <input
                   type="date"
                   id="expiryDate"
@@ -129,7 +129,7 @@ const AddDonation = () => {
               </div>
               <div className={style.botaoEnviar}>
                 {errorMessage && <p className={style.errorMessage}>{errorMessage}</p>}
-                <button type="submit" className={style.submitButton}>Concluir Doação</button>
+                <button type="submit" className={style.submitButton}>Publicar</button>
               </div>
             </form>
           </div>
