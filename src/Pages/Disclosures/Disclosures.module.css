@@ -3,28 +3,13 @@
     width: 100%;
     height: 100%;
   } 
-
-.container{
-    display: flex;
-    flex-direction: column;
-}
+  
 .notificationsContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; /* Adiciona quebra de linha para telas menores */
 }
 
-.Notification {
-  display: flex;
-  flex-direction: column;
-  height: 15.5rem;
-  border-radius: 20px;
-  margin: 10px;
-  margin-bottom: 2rem;
-  width: calc(50% - 20px); /* Ajuste para duas notificações lado a lado */
-  text-align: left;
-  background-color: var(--color-background);
-}
 .header {
   display: flex;
   align-items: colum; /* Alinha verticalmente a imagem e o texto */
@@ -63,11 +48,10 @@
   white-space: normal; /* Permite a quebra de linha */
   word-wrap: break-word; /* Garante a quebra de palavras longas */
   font-size: 1rem;
-  color: #b11010;
 }
 
 .description button {
-  margin: 30px 15px;
+  margin: 30px;
   height: 2rem;
   width: 7rem;
   font-size: 1rem;
@@ -101,37 +85,53 @@
   text-align: left;
   background-color: var(--color-background);
 }
-.newContainer {
-  position: relative; /* Permite que o botão "novo" seja posicionado na imagem */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.Container {
   margin-bottom: 15px; /* Espaçamento inferior do botão*/
 }
-.imgprincipal{
+
+.imgPrincipal{
   width: 960px;
   height: auto;
 }
-.botaoNovo{
-  position: absolute; /* Posicionamento absoluto em relação ao newContainer */
-  bottom: 15px; /* Distância do botão em relação ao fundo da imagem */
-  right: 50px; /* Distância do botão em relação ao lado direito da imagem */
-  margin-right: 150px 15px;
-  height: 2rem;
-  width: 7rem;
-  font-size: 1rem;
-  background-color: var(--color-button);
-  border: none;
-  border-radius: 7px;
+.adicionarDoacao{
+ /* Distância do botão em relação ao fundo da imagem */
+  height: 40px;
+  width: 10%;
+  margin-left: 84%;
   display: flex;
+  margin-top: 20px;
   align-items: center;
-  justify-content: space-around
+  background-color: var(--color-button);
+  border-radius: 7px;
 }
-.botaoNovo a{
-  text-decoration: none;
-}
-.botaoNovo:hover{
-  background-color: #e65a00;
 
+.detailsButton{
+  padding: 15px;
+}
+
+.botaoCriar {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.botaoCriar:hover{
+  border-color: 1px white;
+}
+
+/* Tela de notebook */
+@media screen and (max-width: 1500px) {  
+  .imgPrincipal{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 2500px) {  
+  .imgPrincipal{
+    width: 75%;
+  }
 }

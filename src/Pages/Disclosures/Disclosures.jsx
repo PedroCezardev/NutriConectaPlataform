@@ -72,17 +72,21 @@ const Disclosures = () => {
       phone: 'Telefone: (81) 98146-3261'
     },
   ];
-  
+
   return (
     <>
-    <NavBar />
+      <NavBar />
       <div className={style.body}>
         <SideBar />
         <Content>
           <section className={style.Information}>
-          <div className={style.newContainer}>
-              <img src={Divulgacoes} alt="Nova Imagem" className={style.imgprincipal} />
-                <Link to="/AddDonation" className={style.botaoNovo}>Novo</Link>
+            <div className={style.Container}>
+              <div className={style.imagemDivulgacoes}>
+                <img src={Divulgacoes} alt="Nova Imagem" className={style.imgPrincipal} />
+              </div>
+              <div className={style.adicionarDoacao}>  
+              <Link to="/AddDonation" className={style.botaoCriar}>Criar +</Link>
+              </div>
             </div>
             <div className={style.notificationsContainer}>
               {products.map((product, index) => (
