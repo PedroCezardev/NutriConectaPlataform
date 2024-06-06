@@ -40,10 +40,9 @@
 .contantHome{
     display: flex;
     flex-direction: column;
-    height: 15.5rem;
+    height: 17rem;
     border-radius: 20px;
     margin: 10px;
-    margin-bottom: 2rem;
     width: 30rem;
     text-align: left;
     background-color: var(--color-background);
@@ -118,7 +117,7 @@
 .Notification{
     display: flex;
     flex-direction: column;
-    height: 15.5rem;
+    height: 17rem;
     border-radius: 20px;
     margin: 10px;
     margin-bottom: 2rem;
