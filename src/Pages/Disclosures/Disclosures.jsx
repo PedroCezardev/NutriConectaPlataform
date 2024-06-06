@@ -55,7 +55,7 @@ const Disclosures = () => {
       name: 'Pão de açúcar',
       manufactureDate: '15/05/2024',
       expiryDate: '20/05/2024',
-      quantity: '10 unidades',
+      quantity: '10 unidadess',
       description: 'Após a data de válidade os alimentos não resgatados serão destinados a compostagem.',
       address: 'Rua Desembargador Góis Cavalcante, 261 - Parnamirim, Recife - PE, 52060-140',
       phone: '0800 779 6761'
