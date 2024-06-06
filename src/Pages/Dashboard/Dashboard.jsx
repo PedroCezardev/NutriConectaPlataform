@@ -17,12 +17,12 @@ const ItemOne = styled(Paper)(({ theme }) => ({
   color: theme.palette.text === '#e65a00',
   textAlign: 'center',
   flexDirection: 'column',
-  width: '200px',
-  height: '100px',
+  width: '190px',
+  height: '150px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-around',
-  margin: theme.spacing(4),
+  margin: theme.spacing(2.5),
   borderRadius: '10px',
 }));
 
@@ -33,12 +33,12 @@ const ItemTwo = styled(Paper)(({ theme }) => ({
   color: '#fff',
   textAlign: 'center',
   flexDirection: 'column',
-  width: '500px',
+  width: '380px',
   height: '200px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-around',
-  margin: theme.spacing(1),
+  margin: theme.spacing(2),
   borderRadius: '10px',
 }));
 
