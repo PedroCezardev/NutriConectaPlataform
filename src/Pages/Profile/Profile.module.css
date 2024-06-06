@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-.rectangleEditar:hover{
+.rectangleEditar:hover {
   background-color: #e65a00;
 }
 
@@ -142,4 +142,80 @@
 /* Ajuste para o Content */
 .Content {
   align-items: flex-start;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #F17022;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.dropdownMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff; /* Adiciona a cor do texto branco */
+}
+
+.dropdownMenu ul li:hover {
+  background-color: #D4D4D4;
+  color: #000; /* Adiciona a cor do texto preto ao passar o mouse */
+}
+
+/* Estilos para o botão de salvar imagem */
+.saveButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.saveButton {
+  padding: 10px 20px;
+  background-color: #F17022;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.saveButton:hover {
+  background-color: #e65a00;
+}
+
+.editableInput {
+  border: none;
+  border-bottom: 1px solid black; /* Linha preta embaixo */
+  outline: none;
+  background-color: transparent; /* Fundo transparente */
+}
+
+.label {
+  font-weight: normal;
+}
+
+.rectangleTitleEstatisticas {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 10px;
+  justify-content: flex-start; /* Alinha o título e ícone à esquerda */
+  width: 100%; /* Garante que ocupe a largura total do retângulo */
+}
+
+.rectangleTitleEstatisticas svg {
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+.textInsideRectangleEstatisticas {
+  text-align: center; /* Alinhamento ao centro para o conteúdo dentro do retângulo */
 }

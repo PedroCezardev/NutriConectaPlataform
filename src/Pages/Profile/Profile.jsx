@@ -1,11 +1,57 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import style from "./Profile.module.css";
 import Content from '../../Components/Content/Content';
 import NavBar from '../../Components/Navbar/NavBar';
 import SideBar from '../../Components/SideBar/SideBar';
-import McDonaldsImage from '../../assets/image.Mcdonalds.svg'; // ajuste o caminho conforme necessário
+import DefaultProfileImage from '../../assets/Profile.svg';
 
 const Profile = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [profileImage, setProfileImage] = useState(DefaultProfileImage);
+  const [tempImage, setTempImage] = useState(null);
+  const [institutionName, setInstitutionName] = useState("Menino Ivo");
+  const [cnpj, setCnpj] = useState("42.591.651/0001-43");
+  const [contact, setContact] = useState("(81) 3231-4510");
+  const [address, setAddress] = useState("Av. Gov. Agamenon Magalhães 3849, Recife, PE, 50070-160");
+  const [isEditingInfo, setIsEditingInfo] = useState(false);
+  const [about, setAbout] = useState("A ONG Menino Ivo é uma organização sem fins lucrativos dedicada a ajudar crianças e adolescentes em situação de vulnerabilidade. Fundada em 2005, a ONG oferece programas de educação, promove eventos de alimentação, além de oferecer serviços de orientação profissional e apoio psicológico para a reintegração social. A ONG é sustentada por doações e voluntários, sendo reconhecida pela sua contribuição à comunidade.");
+  const [isEditingAbout, setIsEditingAbout] = useState(false);
+  const fileInputRef = useRef(null);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setTempImage(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleProfileImageClick = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  const handleSaveImage = () => {
+    if (tempImage) {
+      setProfileImage(tempImage);
+      setTempImage(null);
+    }
+  };
+
+  const handleEditInfo = () => {
+    setIsEditingInfo(true);
+    setIsEditingAbout(true); // Ambos definidos como true para editar informações e sobre ao mesmo tempo
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <div className={style.container}>
@@ -19,36 +65,101 @@ const Profile = () => {
               <div className={style.title}>
                 <div className={style.headingWrapper}>
                   <div className={style.profileHeader}>
-                    <img src={McDonaldsImage} alt="McDonalds" className={style.profileImage} />
+                    <img src={profileImage} alt="Profile" className={style.profileImage} onClick={handleProfileImageClick} />
                     <div className={style.textWrapper}>
                       <h2 className={style.profileTitle}>Meu Perfil</h2>
                       <h3 className={style.accountTitle}>Gerenciar Conta</h3>
                     </div>
                   </div>
                 </div>
-                <div className={style.rectangleEditar}> 
-                    <p>
-                      <svg xmlns="http://www.w3.org/2000/svg" 
-                          height="20px" 
-                          viewBox="0 -960 960 960" 
-                          width="20px" 
-                          fill="#FFFF">
-                        <path d="M216-216h51l375-375-51-51-375 375v51Zm-72 72v-153l498-498q11-11 23.84-16 12.83-5 27-5 14.16 0 27.16 5t24 16l51 51q11 11 16 24t5 26.54q0 14.45-5.02 27.54T795-642L297-144H144Zm600-549-51-51 51 51Zm-127.95 76.95L591-642l51 51-25.95-25.05Z"/>
-                      </svg>
-                      Editar
-                    </p>
+                <div className={style.rectangleEditar} onClick={toggleMenu}>
+                  <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="20px" 
+                        viewBox="0 -960 960 960" 
+                        width="20px" 
+                        fill="#FFFF">
+                      <path d="M216-216h51l375-375-51-51-375 375v51Zm-72 72v-153l498-498q11-11 23.84-16 12.83-5 27-5 14.16 0 27.16 5t24 16l51 51q11 11 16 24t5 26.54q0 14.45-5.02 27.54T795-642L297-144H144Zm600-549-51-51 51 51Zm-127.95 76.95L591-642l51 51-25.95-25.05Z"/>
+                    </svg>
+                    Editar
+                  </p>
+                  {menuOpen && (
+                    <div className={style.dropdownMenu}>
+                      <ul>
+                        <li onClick={handleProfileImageClick}>
+                          Foto de perfil
+                          <input 
+                            type="file" 
+                            accept="image/*" 
+                            onChange={handleImageChange} 
+                            style={{ display: 'none' }} 
+                            ref={fileInputRef}
+                          />
+                        </li>
+                        <li onClick={handleEditInfo}>Informações/Sobre</li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
                 <div className={style.rectangleInfo}>
                   <h3 className={style.rectangleTitleInfo}> 
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#F17022">
-                      <path d="M444-288h72v-240h-72v240Zm35.79-312q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm.49 504Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/>
+                      <path d="M444-288h72v-240h-72v240Zm35.79-312q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm.49 504Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Zm0-288Z"/>
                     </svg> Informações
                   </h3>
                   <div className={style.textInsideRectangleInfo}>
-                    <p>Nome da Instituição: McDonalds</p>
-                    <p>CNPJ: 42.591.651/0001-43</p>
-                    <p>Contato (Email ou Telefone): (81) 3231-4510</p>
-                    <p>Endereço: Av. Gov. Agamenon Magalhães 3849, Recife, PE, 50070-160</p>
+                    <p>
+                      <span className={style.label}>Nome da Instituição/ONG:</span>&nbsp;
+                      {isEditingInfo ? (
+                        <input
+                          type="text"
+                          value={institutionName}
+                          onChange={(e) => setInstitutionName(e.target.value)}
+                          className={style.editableInput}
+                        />
+                      ) : (
+                        <span>{institutionName}</span>
+                      )}
+                    </p>
+                    <p>
+                      <span className={style.label}>CNPJ:</span>&nbsp;
+                      {isEditingInfo ? (
+                        <input
+                          type="text"
+                          value={cnpj}
+                          onChange={(e) => setCnpj(e.target.value)}
+                          className={style.editableInput}
+                        />
+                      ) : (
+                        <span>{cnpj}</span>
+                      )}
+                    </p>
+                    <p>
+                      <span className={style.label}>Contato (Email ou Telefone):</span>&nbsp;
+                      {isEditingInfo ? (
+                        <input
+                          type="text"
+                          value={contact}
+                          onChange={(e) => setContact(e.target.value)}
+                          className={style.editableInput}
+                        />
+                      ) : (
+                        <span>{contact}</span>
+                      )}
+                    </p>
+                    <p>
+                      <span className={style.label}>Endereço:</span>&nbsp;
+                      {isEditingInfo ? (
+                        <input
+                          type="text"
+                          value={address}
+                          onChange={(e) => setAddress(e.target.value)}
+                          className={style.editableInput}
+                        />
+                      ) : (
+                        <span>{address}</span>
+                      )}
+                    </p>
                   </div>
                 </div>
                 <div className={style.rectangleContainer}>
@@ -59,18 +170,21 @@ const Profile = () => {
                       </svg> Sobre
                     </h3>
                     <div className={style.textInsideRectangleSobre}>
-                      <p>Fundada em 1940 por Richard e Maurice McDonald, a empresa teve início como um modesto 
-                        restaurante de hambúrgueres na Califórnia. Desde então, expandiu-se globalmente, tornando-se um 
-                        símbolo da cultura americana e uma potência no setor de alimentação rápida. Com sua abordagem inovadora 
-                        de serviço rápido e menu padronizado, a McDonald's revolucionou a indústria de restaurantes e continua a 
-                        ser uma marca reconhecida em todo o mundo.</p>
+                      {isEditingAbout ? (
+                        <textarea
+                          value={about}
+                          onChange={(e) => setAbout(e.target.value)}
+                          className={style.editableInput}
+                        />
+                      ) : (
+                        <p>{about}</p>
+                      )}
                     </div>
                   </div>
                   <div className={style.rectangleEstatisticas}>
                     <h3 className={style.rectangleTitleEstatisticas}> 
-                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F17022">
-                        <path d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z"/>
-                      </svg> Estatísticas
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F17022">
+                      </svg><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F17022"><path d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z"/></svg> Estatísticas
                     </h3>
                     <div className={style.textInsideRectangleEstatisticas}>
                       <p className={style.statNumber}>8</p>
@@ -79,6 +193,20 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
+              {tempImage && (
+                <div className={style.saveButtonWrapper}>
+                  <button className={style.saveButton} onClick={handleSaveImage}>
+                    Salvar Imagem
+                  </button>
+                </div>
+              )}
+              {(isEditingInfo || isEditingAbout) && (
+                <div className={style.saveButtonWrapper}>
+                  <button className={style.saveButton} onClick={() => { setIsEditingInfo(false); setIsEditingAbout(false); }}>
+                    Salvar Informações/Sobre
+                  </button>
+                </div>
+              )}
             </section>
           </Content>
         </div>
