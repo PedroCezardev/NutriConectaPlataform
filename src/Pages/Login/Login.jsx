@@ -2,6 +2,7 @@ import React from "react";
 import * as Components from './Components';
 import style from "./Style.module.css";
 import { useNavigate } from "react-router-dom";
+import logo from '../../assets/logo.svg';
 
 function Login() {
     const [signIn, toggle] = React.useState(true);
@@ -26,8 +27,11 @@ function Login() {
                     <Components.Form>
                         <Components.Title>Criar conta</Components.Title>
                         <Components.Input type='text' placeholder='Name' />
-                        <Components.Input type='email' placeholder='Email' />
-                        <Components.Input type='password' placeholder='Password' />
+                        <Components.Input type='Email' placeholder='Email' />
+                        <Components.Input type='Telefone' placeholder='Telefone' />
+                        <Components.Input type='Cnpj' placeholder='Cnpj' />
+                        <Components.Input type='Endereco' placeholder='Endereco' />
+                        <Components.Input type='Descricao' placeholder='Descricao' />
                         <Components.Button onClick={handleCreate}>Criar</Components.Button>
                     </Components.Form>
                 </Components.SignUpContainer>
@@ -45,9 +49,10 @@ function Login() {
                 <Components.OverlayContainer signinIn={signIn}>
                     <Components.Overlay signinIn={signIn}>
                         <Components.LeftOverlayPanel signinIn={signIn}>
-                            <Components.Title>Bem vindo de volta!</Components.Title>
+                            <img src={logo} alt="Logo" className={style.logo} />
+                            <Components.TitleDescription>Bem vindo de volta!</Components.TitleDescription>
                             <Components.Paragraph>
-                                Possui uma conta? faça login com suas credenciais cadastradas!
+                                Possui uma conta? Faça login com suas credenciais cadastradas!
                             </Components.Paragraph>
                             <Components.GhostButton onClick={() => toggle(true)}>
                                 Entrar
@@ -55,7 +60,8 @@ function Login() {
                         </Components.LeftOverlayPanel>
 
                         <Components.RightOverlayPanel signinIn={signIn}>
-                            <Components.Title>Olá, não possui conta?</Components.Title>
+                            <img src={logo} alt="Logo" className={style.logo} />
+                            <Components.TitleDescription>Olá, não possui conta?</Components.TitleDescription>
                             <Components.Paragraph>                              
                                 Aproveite! Inicie agora e comece sua jornada conosco
                             </Components.Paragraph>

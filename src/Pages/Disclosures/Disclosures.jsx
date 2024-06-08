@@ -17,6 +17,7 @@ import BigBomprecoLogo from '../../assets/BigBomprecoLogo.png';
 import RmExpressLogo from '../../assets/RmExpressLogo.png';
 import ProductModal from '../ProductModal/ProductModal';
 import AddDonation from '../AddDonation/AddDonation';
+import { MdAddToPhotos } from "react-icons/md";
 
 const Disclosures = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -156,8 +157,13 @@ const Disclosures = () => {
               <div className={style.imagemDivulgacoes}>
                 <img src={Divulgacoes} alt="Nova Imagem" className={style.imgPrincipal} />
               </div>
-              <div className={style.adicionarDoacao}>  
-              <Link to="/AddDonation" className={style.botaoCriar}>Criar +</Link>
+              <div className={style.adicionarDoacao}>
+                <button>
+                  <Link to="/AddDonation" className={style.botaoCriar}>
+                    <MdAddToPhotos className={style.icon} />
+                    Criar
+                  </Link>
+                </button> 
               </div>
             </div>
             <div className={style.notificationsContainer}>

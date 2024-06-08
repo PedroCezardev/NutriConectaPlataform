@@ -42,17 +42,17 @@ const SideBar = () => {
           <MdAddToPhotos className={style.icon} />
           Novo
         </Link>
-        <Link to="/messages">
-        <BsChatLeftTextFill className={style.icon} />
+        <Link to="#">
+          <BsChatLeftTextFill className={style.icon} />
           Conversas
-        </Link>
-        <Link to="/About">
-        <FaInfoCircle className={style.icon} />
-          Sobre
         </Link>
         <Link to="/Reportar">
           <MdAssignment className={style.icon} />
           Reportar
+        </Link>
+        <Link to="/About">
+          <FaInfoCircle className={style.icon} />
+          Sobre
         </Link>
       </section>
       <div className={style.logout}>
