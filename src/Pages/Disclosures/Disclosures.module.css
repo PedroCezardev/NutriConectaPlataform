@@ -26,7 +26,7 @@
   margin-top: 21px;
 }
 .info {
-  width: 15rem;
+  width: 14rem;
 }
 
 .info h3 {
@@ -55,6 +55,7 @@
   height: 2rem;
   width: 7rem;
   font-size: 1rem;
+  font-weight: 600;
   background-color: var(--color-button);
   border: none;
   border-radius: 7px;
@@ -77,7 +78,7 @@
 .Notification{
   display: flex;
   flex-direction: column;
-  height: 15.5rem;
+  height: 16rem;
   border-radius: 20px;
   margin: 10px;
   margin-bottom: 2rem;
@@ -95,15 +96,38 @@
   height: auto;
   border-radius: 20px;
 }
-.adicionarDoacao{
+.adicionarDoacao {
   height: 40px;
-  width: 10%;
-  margin-left: 84%;
+  width: 96%;
   display: flex;
   margin-top: 20px;
   align-items: center;
-  background-color: var(--color-button);
   border-radius: 7px;
+  display: flex;
+  justify-content: end;
+}
+
+.adicionarDoacao button{
+  margin: 30px;
+  height: 2.3rem;
+  width: 7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--color-button);
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adicionarDoacao button:hover{
+  background-color: #e65a00;
+}
+
+.adicionarDoacao a{
+  color: black;
+  gap: 10px;
 }
 
 .detailsButton{
@@ -117,10 +141,6 @@
   justify-content: center;
   width: 100%;
   font-size: 20px;
-}
-
-.botaoCriar:hover{
-  border-color: 1px white;
 }
 
 /* Tela de notebook */

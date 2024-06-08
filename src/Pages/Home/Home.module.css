@@ -43,6 +43,7 @@
     height: 17rem;
     border-radius: 20px;
     margin: 10px;
+    margin-bottom: 2rem;
     width: 30rem;
     text-align: left;
     background-color: var(--color-background);
@@ -164,6 +165,7 @@
     height: 2rem;
     width: 7rem;
     font-size: 1rem;
+    font-weight: 600;
     background-color: var(--color-button);
     border: none;
     border-radius: 7px;
@@ -182,4 +184,5 @@
     justify-content: space-around;
     width: 5rem;
     text-decoration: none;
+    color: black;
 }

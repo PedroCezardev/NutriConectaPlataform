@@ -9,26 +9,35 @@
 .newPost {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newPostTitulo {
   display: flex;
-  width: 28%;
-  margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 5px;
+  text-align: left;
+}
+
+.newPostTitulo h1{
+  width: 20rem;
+  font-size: 1.7rem;
 }
 
 .inputImage {
   position: relative;
-  margin-left: 105px;
-  width: 35%;
-  height: 150px;
+  margin-top: 1rem;
+  width: 30rem;
+  height: 120px;
   font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 21px;
-  border: 2px solid black;
+  border: 3px solid var(--color-button);
   cursor: pointer;
   border-radius: 5px;
 }
@@ -39,148 +48,66 @@
   height: 60px;
 }
 
-.form input {
-  width: 35%;
-  margin-left: 105px;
-  margin-top: 18px;
-  padding: 10px;
-  height: 10%;
-  justify-content: left;
+.form {
+  border: 10px solid var(--color-background);
+  height: 26rem;
+  width: 60rem;
+  border-radius: 10px;
+}
+
+.form form{
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border: 2px solid black;
-  border-radius: 5px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.form input {
+  color: var(--color-black);
+  background-color: var(--color-background);
+  margin: 10px;
+  width: 30rem;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
 }
 
 .form textarea {
-  resize: none;
-  width: 80%;
-  margin-left: 105px;
+  color: var(--color-black);
+  background-color: var(--color-background);
   margin-top: 18px;
-  padding: 10px;
+  margin: 10px;
+  width: 30rem;
   height: 80px;
-  justify-content: left;
-  display: flex;
-  border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
 }
 
-.submitButton {
-  margin-left: 70%;
+.botaoEnviar button {
+  margin-left: 0%;
   margin-top: 18px;
   height: 35px;
   width: 110px;
-  color: white;
-  font-weight: bold;
+  color:black;
+  font-weight: 600;
   font-size: 1rem;
-  background-color: #e65a00;
-  border: 2px solid black;
+  background-color: var(--color-button);
+  border: none;
   text-align: center;
   align-items: center;
   border-radius: 7px;
   cursor: pointer;
 }
 
-/* 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.botaoEnviar button:hover{
+  background-color: #e65a00;
 }
 
-.title {
-  text-align: left;
-  padding-left: 20px;
-}
 
-.title h1 {
-  margin: 0;
-  padding: 0;
-}
-
-.rectangleInserirImg {
-  width: 980px;
-  background-color: #FFFFFF;
-  margin-top: 55px;
-  padding: 70px;
-  border-radius: 5px;
-  border: 1px solid black;
-  margin-left: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rectangleTitleInserirImg {
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.rectangleTituloDaPublicacao {
-  width: 450px;
-  background-color: #FFFFFF;
-  margin-top: 35px;
-  padding: 10px;
-  padding-left: 10px;
-  border-radius: 5px;
-  border: 1px solid black;
-  margin-left: 40px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.rectangleTitlePublic {
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.6);
-  margin: 0;
-  padding: 0;
-}
-
-.rectangleTexto {
-  width: 980px;
-  background-color: #FFFFFF;
-  margin-top: 35px;
-  padding: 70px;
-  padding-left: 0;
-  border-radius: 5px;
-  border: 1px solid black;
-  margin-left: 40px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.rectangleTitleTexto {
-  font-size: 21px;
-  color: rgba(0, 0, 0, 0.6);
-  text-align: left;
-  width: 100%;
-  padding-left: 10px;
-}
-
-.rectanglePublicar {
-  position: relative;
-  top: 45px;
-  right: 40px;
-  width: 100px;
-  height: 29px;
-  background-color: #F17022;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  z-index: 2;
-  margin-left: auto;
-}
-
-.rectanglePublicar p {
-  color: white;
-  align-items: center;
-}
- */
- .imagePreview {
+.imagePreview {
   position: absolute;
   top: 0;
   left: 0;
@@ -195,7 +122,7 @@
 
 .imagePreview img {
   width: 300px;
-  height: 150px;
+  height: 120px;
   padding: 5px;
   border-radius: 7px;
   object-fit: cover;

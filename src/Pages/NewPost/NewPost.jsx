@@ -122,7 +122,7 @@ const NewPost = () => {
               </div>
               <div className={style.botaoEnviar}>
                 {errorMessage && <p className={style.errorMessage}>{errorMessage}</p>}
-                <button type="submit" className={style.submitButton}>Publicar</button>
+                <button type="submit">Publicar</button>
               </div>
             </form>
           </div>
@@ -136,4 +136,3 @@ const NewPost = () => {
 
 
 export default NewPost;
-

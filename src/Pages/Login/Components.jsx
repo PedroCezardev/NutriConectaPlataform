@@ -6,9 +6,9 @@ border-radius: 10px;
 box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 position: relative;
 overflow: hidden;
-width: 50%;
+width: 60%;
 max-width: 100%;
-height: 50%;
+height: 75%;
 `;
 
 export const SignUpContainer = styled.div`
@@ -57,9 +57,17 @@ margin: 0;
 color: #000000;
 `;
 
+export const TitleDescription = styled.h1`
+font-weight: bold;
+margin: 0;
+color: #ffffff;
+margin-top: 1rem;
+`;
+
 export const Input = styled.input`
 background-color: #d9d9d9;
 border: none;
+border-radius: 5px;
 padding: 12px 15px;
 margin: 8px 0;
 width: 100%;
@@ -157,5 +165,5 @@ export const Paragraph = styled.p`
   line-height: 15px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
-  color: #000000;
+  color: #ffffff;
 `;

@@ -5,8 +5,7 @@ import Content from '../../Components/Content/Content';
 import NavBar from '../../Components/Navbar/NavBar';
 
 const AddDonation = () => {
-  const [formData, setFormData] = useState({
-    name: '',
+  const [formData, setFormData] = useState({ 
     manufactureDate: '',
     expiryDate: '',
     quantity: '',
@@ -74,6 +73,7 @@ const AddDonation = () => {
           <div className={style.form}>
             <form onSubmit={handleSubmit}>
               <div className={style.inputNomeAlimento}>
+                <h1> Nome do Alimento </h1>
                 <input
                   type="text"
                   id="name"
