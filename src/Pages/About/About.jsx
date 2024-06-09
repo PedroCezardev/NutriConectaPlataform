@@ -186,18 +186,26 @@ const About = () => {
           </div>
           <div className={style.textoNovidade1}>
             <h1>Moderno e versátil</h1>
-            <p>O Dash Metrics é uma inovação muito importante para a educação no Brasil, ele vai oferecer todo os tipos de dados em forma de gráfico para facilitar o entedimento do analista e através disso será possível realizar diversas melhorias em várias escolas da região mais carente ou até em todas as regiões, possibilitando assim uma aplicação mais eficiente do dinheiro público.</p>
+            <p>A NutriConecta é uma inovação muito importante para o futuro da sustentabilidade na cidade do Recife,
+              ela vai oferecer todo o suporte para a doação de alimentos para as pessoas mais necessitadas, 
+              além de doar alimentos comestíveis, ainda podem ser doados alimentos que vão para a compostagem. 
+              Proporcionamos uma plataforma bastante completa para as empresas e ongs dispostas a mudar o futuro.</p>
           </div>
         </div>
 
         <div className={style.novidade2}>
           <div className={style.textoNovidade2}>
-            <h1>Moderno e versátil</h1>
-            <p>O Dash Metrics é uma inovação muito importante para a educação no Brasil, ele vai oferecer todo os tipos de dados em forma de gráfico para facilitar o entedimento do analista e através disso será possível realizar diversas melhorias em várias escolas da região mais carente ou até em todas as regiões, possibilitando assim uma aplicação mais eficiente do dinheiro público.</p>
-            </div>
-            <div className={style.imagemNovidade2}>
-              <img src={ImgNovidade2} alt="Imagem novidades" className={style.ImgNovidade2} />
-            </div>
+            <h1>Diferente e intuitivo</h1>
+            <p>A NutriConecta trás consigo várias funcinalidades como: divulgações de doações, 
+              perfil de usuário, página home para visualizações de doações recentes, newsletter 
+              para conscientização de usuários, oferecemos também diversos tipos de dados em forma de gráfico como:
+              análises de alimentos doados, alimentos que foram para a compostagem, e quantidade de doações durante o mês.
+              Somos pioneiros com nossa plataformae cada inovação que trazemos é muito importante para o futuro da sustentabilidade e
+              comprimento das ods no Brasil.</p>
+          </div>
+          <div className={style.imagemNovidade2}>
+            <img src={ImgNovidade2} alt="Imagem novidades" className={style.ImgNovidade2} />
+          </div>
         </div>
 
         <div className={style.novidade3}>
@@ -205,15 +213,15 @@ const About = () => {
             <img src={ImgNovidade3} alt="Imagem novidades" className={style.ImgNovidade3} />
           </div>
           <div className={style.textoNovidade3}>
-            <h1>Moderno e versátil</h1>
-            <p>O Dash Metrics é uma inovação muito importante para a educação no Brasil, ele vai oferecer todo os tipos de dados em forma de gráfico para facilitar o entedimento do analista e através disso será possível realizar diversas melhorias em várias escolas da região mais carente ou até em todas as regiões, possibilitando assim uma aplicação mais eficiente do dinheiro público.</p>
+            <h1>Protótipo navegável</h1>
+            <p>Aqui, oferecemos a você acesso ao nosso protótipo navegável e apresentamos nossa proposta como empresa.</p>
             <div className={style.linkFigma}>
-            <a href="https://www.figma.com/design/7JkNaXqqw0niF2TaRkIL1V/Projeto-PI3-NutriConecta?node-id=0-1&t=avSRAZdrzPnBE25T-0"
-            class="btn">Acessar</a>
+              <a href="https://www.figma.com/design/7JkNaXqqw0niF2TaRkIL1V/Projeto-PI3-NutriConecta?node-id=0-1&t=avSRAZdrzPnBE25T-0"
+                class="btn">Acessar</a>
             </div>
           </div>
         </div>
-        </div>
+      </div>
 
 
       <div id="time" className={style.time}>
@@ -283,7 +291,7 @@ const About = () => {
               <img src={imagemPedro} alt="Imagem diferencial2" className={style.fotoTeste} />
             </div>
             <h1> Pedro Cezar </h1>
-            <p> Web developer </p>
+            <p> Dev FullStack </p>
             <div className={style.linkTime}>
               <a href='https://www.instagram.com/_pedrodev0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' rel='noopener noreferrer'>
                 <FaInstagram className={style.iconeTime} />
@@ -326,8 +334,7 @@ const About = () => {
               <span className={style.accTitle}>Quais são os recursos oferecidos pela plataforma para facilitar a comunicação entre fornecedores de alimentos e ongs?</span>
             </AccordionSummary>
             <AccordionDetails className={style.accordionDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              Basicamente temos uma funcionalidade na nossa plataforma chamada Divulgação, essa funcionalidade é utilizada para as empresas divulgarem alimentos que estão sendo doados ou que estão impróprios para o consumo mas podem ser utilizados na adubagem, após publicar a divulgação as ongs interessadas podem recolher o alimento no local que a empresa doadora estabeleceu para retirada.
             </AccordionDetails>
           </Accordion>
           <Accordion className={style.accordion}>
@@ -339,8 +346,7 @@ const About = () => {
               <span className={style.accTitle}>Quais os recursos educativos a Nutri Conecta oferece para conscientizar os usuários?</span>
             </AccordionSummary>
             <AccordionDetails className={style.accordionDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              Todas as semanas desenvolvemos newsletters para os nossos usuários, tanto as ongs quanto as empresas doadoras poderão ter acesso ao nosso newsletter que vai contar com diversos conteúdos educativos sobre um futuro mais sustentável e ecológico.
             </AccordionDetails>
           </Accordion>
           <Accordion className={style.accordion}>
@@ -352,8 +358,7 @@ const About = () => {
               <span className={style.accTitle}>Qual é a importância da funcionalidade de conexão com coletores de alimentos para adubagem oferecida pela Nutri Conecta?</span>
             </AccordionSummary>
             <AccordionDetails className={style.accordionDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              A maioria dos alimentos que não são próprios para o consumo ainda podem ser reaproveitados na adubagem, assim pode ser plantado mais alimentos para a população.
             </AccordionDetails>
           </Accordion>
           <Accordion className={style.accordion}>
