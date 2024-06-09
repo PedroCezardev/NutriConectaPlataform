@@ -89,6 +89,7 @@
   align-items: center; 
   text-align: left; 
   margin-bottom: 10px; 
+
 }
 
 .rectangleTitleInfo svg, .rectangleTitleSobre svg, .rectangleTitleEstatisticas svg {
@@ -123,6 +124,7 @@
 
 .textInsideRectangleSobre p, .textInsideRectangleEstatisticas p {
   margin-bottom: 10px; 
+  color: var(--color-black);
 }
 
 .textInsideRectangleEstatisticas {
