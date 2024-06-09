@@ -2,7 +2,7 @@ import React from 'react';
 import style from './About.module.css';
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.svg'; // Importando a logo SVG
-import imagem1 from '../../assets/imagemSobre1.png';
+import imagemAnonima from '../../assets/imagemSobre1.png';
 import imagemJhones from '../../assets/fotoTeste.jpg';
 import imagemGio from '../../assets/fotoGio.jpg';
 import imagemMay from '../../assets/fotoMay.jpg';
@@ -178,25 +178,25 @@ const About = () => {
         </div>
 
         <div className={style.imagem1}>
-          <img src={imagem1} alt="Imagem novidades" className={style.imagem1} />
+          <img src={imagemAnonima} alt="Imagem novidades" className={style.imagemAnonima} />
         </div>
         <div className={style.destaque1}>
           <h1>Destaque 1</h1>
         </div>
         <div className={style.imagem1}>
-          <img src={imagem1} alt="Imagem diferencial1" className={style.imagem1} />
+          <img src={imagemAnonima} alt="Imagem diferencial1" className={style.imagemAnonima} />
         </div>
         <div className={style.destaque2}>
           <h1>Destaque 2</h1>
         </div>
         <div className={style.imagem1}>
-          <img src={imagem1} alt="Imagem diferencial2" className={style.imagem1} />
+          <img src={imagemAnonima} alt="Imagem diferencial2" className={style.imagemAnonima} />
         </div>
         <div className={style.destaque3}>
           <h1>Destaque 3</h1>
         </div>
         <div className={style.imagem1}>
-          <img src={imagem1} alt="Imagem diferencial2" className={style.imagem1} />
+          <img src={imagemAnonima} alt="Imagem diferencial2" className={style.imagemAnonima} />
         </div>
       </div>
       <div id="time" className={style.time}>

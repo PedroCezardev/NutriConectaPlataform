@@ -1,5 +1,5 @@
 .Content{
-  height: 200px;
+  height: 800px;
   width: 100%;
   background-color: var(--color-white);
   border-radius: 20px;
@@ -7,9 +7,9 @@
   margin-left: 3rem;
   padding: 30px;
   display: flex;
+  overflow-x: hidden;
   text-align: center;
   justify-content: space-around;
-  overflow-x: scroll;
   overflow-y: scroll;
   box-shadow: 0 2rem 3rem  var(--color-box-shadow);
   transition: all 0.3s ease;
@@ -46,65 +46,57 @@
   background: var(--color-rolagem-active); /* Cor do polegar quando ativado */
 }
 
+@media screen and (max-width: 1000px) {
+  .Content{
+    height: 550px;
+    width: 100%;
+    
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .Content{
+    height: 550px;
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-width: 1500px) {
   .Content{
-    height: 520px;
-    width: 2130px;
+    height: 550px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 1600px) {
+
+@media screen and (max-height: 1500px) {
   .Content{
-    height: 620px;
-    width: 3130px;
+    height: 550px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 1700px) {
-  .Content{
-    height: 720px;
-    width: 4130px;
-  }
-}
-
-@media screen and (max-width: 1800px) {
-  .Content{
-    height: 720px;
-    width: 45130px;
-  }
-}
-
-@media screen and (max-width: 1900px) {
-  .Content{
-    height: 820px;
-    max-width: 55130px;
-  }
-}
-
-@media screen and (max-width: 1800px) {
-  .Content{
-    height: 820px;
-    width: 65130px;
-  }
-}
-
-@media screen and (max-width: 1900px) {
-  .Content{
-    height: 850px;
-    width: 75130px;
-  }
-}
 
 @media screen and (max-width: 2000px) {
   .Content{
-    height: 850px;
-    width: 85130px;
+    height: 550px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 2150px) {
+
+@media screen and (max-height: 2000px) {
   .Content{
-    min-height: 850px;
-    width: 95000px;
+    height: 550px;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 2500px) {
+  .Content{
+    height: 600px;
+    width: 100%;
   }
 }
