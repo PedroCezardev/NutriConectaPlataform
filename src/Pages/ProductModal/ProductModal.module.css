@@ -49,6 +49,7 @@
 
 .p p{
   margin: 10px;
+  color: var(--color-black);
 }
 
 span {

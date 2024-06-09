@@ -48,6 +48,7 @@
   white-space: normal; /* Permite a quebra de linha */
   word-wrap: break-word; /* Garante a quebra de palavras longas */
   font-size: 1rem;
+  color: var(--color-black);
 }
 
 .description button {
@@ -78,7 +79,7 @@
 .Notification{
   display: flex;
   flex-direction: column;
-  height: 16rem;
+  height: 18rem;
   border-radius: 20px;
   margin: 10px;
   margin-bottom: 2rem;
