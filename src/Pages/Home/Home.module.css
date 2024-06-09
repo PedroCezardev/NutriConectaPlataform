@@ -1,157 +1,154 @@
-.body{
-    display: flex;
-    width: 100%;
-    height: 100%;
-} 
-
-/* estilização da animação das imagens */
-.sliderContainer{
-    height: 15rem;
-    width: 60rem;
-    border-radius: 20px;
-    display: block;
-    
+.body {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.sliderContainer img{
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    /* border-image: fill 0 linear-gradient(#0001, #000);    */
+/* estilização da animação das imagens */
+.sliderContainer {
+  height: 15rem;
+  width: 60rem;
+  border-radius: 20px;
+  display: block;
+}
+
+.sliderContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  /* border-image: fill 0 linear-gradient(#0001, #000);    */
 }
 
 /* estilizacao dos titulos das paginas */
-.title{
-    margin: 1.5rem 10px 1.5rem 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.title {
+  margin: 1.5rem 10px 1.5rem 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* estilizacao do grupo home e notificacao */
-.group{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
+.group {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* estilizacao da div de conteudo */
-.contantHome{
-    display: flex;
-    flex-direction: column;
-    height: 18rem;
-    border-radius: 20px;
-    margin: 10px;
-    margin-bottom: 2rem;
-    width: 30rem;
-    text-align: left;
-    background-color: var(--color-orange);
+.contantHome {
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 2rem;
+  width: 30rem;
+  text-align: left;
+  background-color: var(--color-background);
 }
 
-.contantHome h3{
-    margin: 1rem;
-    height: 15px;
-    font-size: 22px;
+.contantHome h3 {
+  margin: 1rem;
+  height: 15px;
+  font-size: 22px;
 }
 
-.contantHome p{
-    margin: 0.5rem;
-    font-size: 17px;
-    white-space: normal;
-    color: var(--color-icon);
+.contantHome p {
+  margin: 0.5rem;
+  font-size: 17px;
+  white-space: normal;
+  color: var(--color-icon);
 }
 
 /* estilização do icones */
-.icon{
-    font-size: 23px;
-  }
-  
-  .icon path{
-    color: var(--color-icon);
-  }
-
-/* estilizaão do nome do usuário */
-.titleContant{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
+.icon {
+  font-size: 23px;
 }
 
-.titleContant p{
-    color: var(--color-datatime);
+.icon path {
+  color: var(--color-icon);
+}
+
+/* estilizaão do nome do usuário */
+.titleContant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.titleContant p {
+  color: var(--color-datatime);
 }
 
 /* estilizacao no texto do conteudo */
-.text{
-    min-width: 20rem; /* Define a largura mínima */
+.text {
+  min-width: 20rem; /* Define a largura mínima */
   max-width: 100rem; /* Limita a largura máxima */
   margin: 10px;
   white-space: normal; /* Permite a quebra de linha */
   word-wrap: break-word; /* Garante a quebra de palavras longas */
-
 }
 
 /* estilizacao do texto data e hora */
-.DataTime p{
-    font-size: 1rem;
-    color: var(--color-datatime);
-    
+.DataTime p {
+  font-size: 1rem;
+  color: var(--color-datatime);
 }
 
 /* estilizacao da div dos icones e data */
-.Comentarys{
-    margin: 5px 10px 8px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.Comentarys {
+  margin: 5px 10px 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* estilizacao do icones */
-.icons{
-    margin-left: 1rem;
-    display: flex;
-    gap: 2rem;
+.icons {
+  margin-left: 1rem;
+  display: flex;
+  gap: 2rem;
 }
 
 /* Notificacoes */
-.Notification{
-    display: flex;
-    flex-direction: column;
-    height: 18rem;
-    border-radius: 20px;
-    margin: 10px;
-    margin-bottom: 2rem;
-    width: 25rem;
-    text-align: left;
-    background-color: var(--color-background);
+.Notification {
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 2rem;
+  width: 25rem;
+  text-align: left;
+  background-color: var(--color-background);
 }
 
-.header{
-    display: flex;
-    margin: 10px 15px;
-    gap: 1rem;
-    width: 24rem;
+.header {
+  display: flex;
+  margin: 10px 15px;
+  gap: 1rem;
+  width: 24rem;
 }
 
-.info{
-    width: 15rem;
+.info {
+  width: 15rem;
 }
 
-.info h3{
-    width: 15rem;
-    margin-bottom: 8px;
-    margin-top: 12px;
+.info h3 {
+  width: 15rem;
+  margin-bottom: 8px;
+  margin-top: 12px;
 }
 
-.info p{
-    width: 15rem;
-    font-size: 0.9rem;
-    color: var(--color-info);
+.info p {
+  width: 15rem;
+  font-size: 0.9rem;
+  color: var(--color-info);
 }
 
-.description p{
-    min-width: 20rem; /* Define a largura mínima */
+.description p {
+  min-width: 20rem; /* Define a largura mínima */
   max-width: 100rem; /* Limita a largura máxima */
   margin: 10px 15px;
   white-space: normal; /* Permite a quebra de linha */
@@ -160,29 +157,29 @@
   color: var(--color-icon);
 }
 
-.description button{
-    margin: 10px 15px;
-    height: 2rem;
-    width: 7rem;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: var(--color-button);
-    border: none;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.description button {
+  margin: 10px 15px;
+  height: 2rem;
+  width: 7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--color-button);
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.description button:hover{
-    background-color: #de5e0f;
+.description button:hover {
+  background-color: #de5e0f;
 }
 
-.description a{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 5rem;
-    text-decoration: none;
-    color: var(--color-white);
+.description a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 5rem;
+  text-decoration: none;
+  color: var(--color-white);
 }
