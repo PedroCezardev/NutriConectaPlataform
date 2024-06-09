@@ -9,6 +9,9 @@ import imagemMay from '../../assets/fotoMay.jpg';
 import imagemPedro from '../../assets/fotoPedro.jpg';
 import imagemHome from '../../assets/imagemHome.jpg'; // Corrigindo o caminho da imagem
 import imagemStar from '../../assets/star.svg';
+import ImgNovidade1 from '../../assets/ImgNovidade1.png';
+import ImgNovidade2 from '../../assets/ImgNovidade2.png';
+import ImgNovidade3 from '../../assets/ImgNovidade3.png';
 import imagemOds2 from '../../assets/ods2.svg';
 import imagemOds12 from '../../assets/ods12.svg';
 import imagemOds15 from '../../assets/ods15.svg';
@@ -177,28 +180,42 @@ const About = () => {
           <h1>Novidades</h1>
         </div>
 
-        <div className={style.imagem1}>
-          <img src={imagemAnonima} alt="Imagem novidades" className={style.imagemAnonima} />
+        <div className={style.novidade1}>
+          <div className={style.imagemNovidade1}>
+            <img src={ImgNovidade1} alt="Imagem novidades" className={style.ImgNovidade1} />
+          </div>
+          <div className={style.textoNovidade1}>
+            <h1>Moderno e versátil</h1>
+            <p>O Dash Metrics é uma inovação muito importante para a educação no Brasil, ele vai oferecer todo os tipos de dados em forma de gráfico para facilitar o entedimento do analista e através disso será possível realizar diversas melhorias em várias escolas da região mais carente ou até em todas as regiões, possibilitando assim uma aplicação mais eficiente do dinheiro público.</p>
+          </div>
         </div>
-        <div className={style.destaque1}>
-          <h1>Destaque 1</h1>
+
+        <div className={style.novidade2}>
+          <div className={style.textoNovidade2}>
+            <h1>Moderno e versátil</h1>
+            <p>O Dash Metrics é uma inovação muito importante para a educação no Brasil, ele vai oferecer todo os tipos de dados em forma de gráfico para facilitar o entedimento do analista e através disso será possível realizar diversas melhorias em várias escolas da região mais carente ou até em todas as regiões, possibilitando assim uma aplicação mais eficiente do dinheiro público.</p>
+            </div>
+            <div className={style.imagemNovidade2}>
+              <img src={ImgNovidade2} alt="Imagem novidades" className={style.ImgNovidade2} />
+            </div>
         </div>
-        <div className={style.imagem1}>
-          <img src={imagemAnonima} alt="Imagem diferencial1" className={style.imagemAnonima} />
+
+        <div className={style.novidade3}>
+          <div className={style.imagemNovidade3}>
+            <img src={ImgNovidade3} alt="Imagem novidades" className={style.ImgNovidade3} />
+          </div>
+          <div className={style.textoNovidade3}>
+            <h1>Moderno e versátil</h1>
+            <p>O Dash Metrics é uma inovação muito importante para a educação no Brasil, ele vai oferecer todo os tipos de dados em forma de gráfico para facilitar o entedimento do analista e através disso será possível realizar diversas melhorias em várias escolas da região mais carente ou até em todas as regiões, possibilitando assim uma aplicação mais eficiente do dinheiro público.</p>
+            <div className={style.linkFigma}>
+            <a href="https://www.figma.com/design/7JkNaXqqw0niF2TaRkIL1V/Projeto-PI3-NutriConecta?node-id=0-1&t=avSRAZdrzPnBE25T-0"
+            class="btn">Acessar</a>
+            </div>
+          </div>
         </div>
-        <div className={style.destaque2}>
-          <h1>Destaque 2</h1>
         </div>
-        <div className={style.imagem1}>
-          <img src={imagemAnonima} alt="Imagem diferencial2" className={style.imagemAnonima} />
-        </div>
-        <div className={style.destaque3}>
-          <h1>Destaque 3</h1>
-        </div>
-        <div className={style.imagem1}>
-          <img src={imagemAnonima} alt="Imagem diferencial2" className={style.imagemAnonima} />
-        </div>
-      </div>
+
+
       <div id="time" className={style.time}>
         <div className={style.timeTitulo}>
           <h1>Nosso time</h1>
@@ -219,68 +236,68 @@ const About = () => {
               <a href='https://www.linkedin.com/in/giovanna-gabriela-44b726270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' target='_blank' rel='noopener noreferrer'>
                 <FaLinkedin className={style.iconeTime} />
               </a>
+            </div>
+          </div>
+          <div className={style.timeIntegrante2}>
+            <div className={style.fotoIntegrante2}>
+              <img src={imagemJhones} alt="Imagem diferencial2" className={style.fotoTeste} />
+            </div>
+            <h1> Jhones Silva </h1>
+            <p> Web developer </p>
+
+            <div className={style.linkTime}>
+              <a href='https://www.instagram.com/jhon_devp/' target='_blank' rel='noopener noreferrer'>
+                <FaInstagram className={style.iconeTime} />
+              </a>
+              <a href='https://github.com/JhonB-DEVLP' target='_blank' rel='noopener noreferrer'>
+                <FaGithub className={style.iconeTime} />
+              </a>
+              <a href='https://www.linkedin.com/in/jhonesbonifaciodasilva/' target='_blank' rel='noopener noreferrer'>
+                <FaLinkedin className={style.iconeTime} />
+              </a>
+            </div>
+          </div>
+          <div className={style.timeIntegrante3}>
+            <div className={style.fotoIntegrante3}>
+              <img src={imagemMay} alt="Imagem diferencial2" className={style.fotoTeste} />
+            </div>
+            <h1> Mayara Wyrla </h1>
+            <p> Web developer </p>
+
+            <div className={style.linkTime}>
+              <a href='https://www.instagram.com/_mayaranascimentoo?igsh=b3p4dmZteXdmaXVy' target='_blank' rel='noopener noreferrer'>
+                <FaInstagram className={style.iconeTime} />
+              </a>
+              <a href='https://github.com/Mayaranasciment0' target='_blank' rel='noopener noreferrer'>
+                <FaGithub className={style.iconeTime} />
+              </a>
+              <a href='https://www.linkedin.com/in/mayarawyrlanascimento' target='_blank' rel='noopener noreferrer'>
+                <FaLinkedin className={style.iconeTime} />
+              </a>
+            </div>
+          </div>
+
+
+          <div className={style.timeIntegrante4}>
+            <div className={style.fotoIntegrante4}>
+              <img src={imagemPedro} alt="Imagem diferencial2" className={style.fotoTeste} />
+            </div>
+            <h1> Pedro Cezar </h1>
+            <p> Web developer </p>
+            <div className={style.linkTime}>
+              <a href='https://www.instagram.com/_pedrodev0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' rel='noopener noreferrer'>
+                <FaInstagram className={style.iconeTime} />
+              </a>
+              <a href='https://github.com/PedroCezardev' target='_blank' rel='noopener noreferrer'>
+                <FaGithub className={style.iconeTime} />
+              </a>
+              <a href='https://www.linkedin.com/in/pedro-cezarr/' target='_blank' rel='noopener noreferrer'>
+                <FaLinkedin className={style.iconeTime} />
+              </a>
+            </div>
           </div>
         </div>
-        <div className={style.timeIntegrante2}>
-          <div className={style.fotoIntegrante2}>
-            <img src={imagemJhones} alt="Imagem diferencial2" className={style.fotoTeste} />
-          </div>
-          <h1> Jhones Silva </h1>
-          <p> Web developer </p>
-
-          <div className={style.linkTime}>
-            <a href='https://www.instagram.com/jhon_devp/' target='_blank' rel='noopener noreferrer'>
-              <FaInstagram className={style.iconeTime} />
-            </a>
-            <a href='https://github.com/JhonB-DEVLP' target='_blank' rel='noopener noreferrer'>
-              <FaGithub className={style.iconeTime} />
-            </a>
-            <a href='https://www.linkedin.com/in/jhonesbonifaciodasilva/' target='_blank' rel='noopener noreferrer'>
-              <FaLinkedin className={style.iconeTime} />
-            </a>
-          </div>
-        </div>
-        <div className={style.timeIntegrante3}>
-          <div className={style.fotoIntegrante3}>
-            <img src={imagemMay} alt="Imagem diferencial2" className={style.fotoTeste} />
-          </div>
-          <h1> Mayara Wyrla </h1>
-          <p> Web developer </p>
-
-          <div className={style.linkTime}>
-            <a href='https://www.instagram.com/_mayaranascimentoo?igsh=b3p4dmZteXdmaXVy' target='_blank' rel='noopener noreferrer'>
-              <FaInstagram className={style.iconeTime} />
-            </a>
-            <a href='https://github.com/Mayaranasciment0' target='_blank' rel='noopener noreferrer'>
-              <FaGithub className={style.iconeTime} />
-            </a>
-            <a href='https://www.linkedin.com/in/mayarawyrlanascimento' target='_blank' rel='noopener noreferrer'>
-              <FaLinkedin className={style.iconeTime} />
-            </a>
-          </div>
-        </div>
-
-
-        <div className={style.timeIntegrante4}>
-          <div className={style.fotoIntegrante4}>
-            <img src={imagemPedro} alt="Imagem diferencial2" className={style.fotoTeste} />
-          </div>
-          <h1> Pedro Cezar </h1>
-          <p> Web developer </p>
-          <div className={style.linkTime}>
-            <a href='https://www.instagram.com/_pedrodev0?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' rel='noopener noreferrer'>
-              <FaInstagram className={style.iconeTime} />
-            </a>
-            <a href='https://github.com/PedroCezardev' target='_blank' rel='noopener noreferrer'>
-              <FaGithub className={style.iconeTime} />
-            </a>
-            <a href='https://www.linkedin.com/in/pedro-cezarr/' target='_blank' rel='noopener noreferrer'>
-              <FaLinkedin className={style.iconeTime} />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div >
+      </div >
       <div id="duvidas" className={style.duvidas}>
         <div className={style.tituloDuvidas}>
           <h1>Frequentemente perguntados</h1>
