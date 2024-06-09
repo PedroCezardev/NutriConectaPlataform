@@ -30,6 +30,7 @@
 .formContainer {
   display: flex;
   width: 60rem;
+  height: 422px;
   margin-top: 15px;
   align-items: center;
   gap: 12px;

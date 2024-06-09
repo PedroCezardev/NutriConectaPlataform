@@ -39,23 +39,24 @@
 .contantHome{
     display: flex;
     flex-direction: column;
-    height: 17rem;
+    height: 18rem;
     border-radius: 20px;
     margin: 10px;
     margin-bottom: 2rem;
     width: 30rem;
     text-align: left;
-    background-color: var(--color-background);
+    background-color: var(--color-orange);
 }
 
 .contantHome h3{
     margin: 1rem;
-    height: 1.5rem;
-    font-size: 1.2rem;
+    height: 15px;
+    font-size: 22px;
 }
 
 .contantHome p{
     margin: 0.5rem;
+    font-size: 17px;
     white-space: normal;
     color: var(--color-icon);
 }
@@ -174,7 +175,7 @@
 }
 
 .description button:hover{
-    background-color: #f17022;
+    background-color: #de5e0f;
 }
 
 .description a{

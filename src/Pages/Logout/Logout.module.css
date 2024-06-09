@@ -22,7 +22,7 @@
 }
 
 .divLogout {
-  background-image: url(../../assets/imagemFundoLogout.png);
+  background-color: var(--color-backgorund);
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
   background-position:center; /* Centraliza a imagem */
   display: flex;
