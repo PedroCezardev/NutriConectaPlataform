@@ -58,15 +58,17 @@
   font-size: 1rem;
   font-weight: 600;
   background-color: var(--color-button);
+  color: var(--color-white);
   border: none;
   border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .description button:hover{
-  background-color: #e65a00;
+  background-color: #f17022;
 }
 
 .DataTime {
@@ -115,6 +117,7 @@
   font-size: 1rem;
   font-weight: 500;
   background-color: var(--color-button);
+  color: var(--color-white);
   border: none;
   border-radius: 7px;
   display: flex;
@@ -123,11 +126,12 @@
 }
 
 .adicionarDoacao button:hover{
-  background-color: #e65a00;
+  background-color: #f17022;
 }
 
 .adicionarDoacao a{
   color: black;
+  color: var(--color-white);
   gap: 10px;
 }
 
