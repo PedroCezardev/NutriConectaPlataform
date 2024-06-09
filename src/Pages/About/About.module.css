@@ -300,6 +300,7 @@
 .textoNovidade2 h1, p,
 .textoNovidade3 h1, p {
   color: white;
+  margin-bottom: 15px;
 }
 
 .novidade2{
@@ -1092,6 +1093,7 @@
   .textoNovidade3 h1 {
     color: white;
     font-size: 22px;
+    margin-bottom: 15px;
   }
 
   .textoNovidade1 p,
@@ -1138,6 +1140,7 @@
     align-items: center;
     justify-content: center;
     height: 70vh;
+    margin-top: 55px;
     gap: 35px;
   }
   
