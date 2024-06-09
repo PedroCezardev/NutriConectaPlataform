@@ -726,7 +726,7 @@
 
   .homeContainer {
     padding: 55px;
-    background-color: #f17022;
+    background-color: var(--color-orange);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -793,7 +793,7 @@
     top: 100px; /* Ajuste conforme necessário */
     width: 100%; /* Ajuste conforme necessário */
     display: flex;
-    background-color: #f17022;
+    background-color: var(--color-orange);
     padding: 30px;
     justify-content: space-around;
     gap: 100px;
@@ -880,7 +880,7 @@
     display: flex;
     align-items: center;
     height: 60px;
-    background-color: #f17022;
+    background-color: var(--color-orange);
   }
   
   .timeTitulo h1 {
@@ -895,7 +895,7 @@
   .containerTime {
     height: 500px;
     width: 100%;
-    background-color: #f17022;
+    background-color: var(--color-orange);
     justify-content: center;
     display: flex;
     gap: 5px;
@@ -1186,7 +1186,7 @@
   .duvidas {
     height: 100%; /* Ajuste conforme necessário */
     display: flex;
-    background-color: #f17022;
+    background-color: var(--color-orange);
     padding: 50px;
     justify-content: space-around;
     gap: 100px;
