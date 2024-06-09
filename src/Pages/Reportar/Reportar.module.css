@@ -45,11 +45,16 @@
   margin-top: 10px;
   height: 75px;
   border-radius: 5px;
+  color: var(--color-black);
+}
+
+.contato_description {
+  color: var(--color-black);
 }
 
 .informacoesContato a {
   text-decoration: none;
-  color: var(--color-black);
+  color: black;
 }
 
 .informacoesContato h2 {
@@ -107,6 +112,8 @@ input {
   border: none;
   border-radius: 7px;
   align-items: center;
+  margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .botaoEnviar button:hover{

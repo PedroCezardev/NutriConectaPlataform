@@ -64,7 +64,7 @@ const Tutorial = () => {
             <div className={style.formContainer}>
               <div className={style.informacoesContato}>
               <h2> Contato </h2>
-                    <p className={style.contato__description}>
+                    <p className={style.contato_description}>
                       Entre em contato com o suporte pelo telefone:
                       <a href="tel:+558199112895"> 81 98596-4761</a> ou email: 
                       <a href="mailto:jhonesbonifacio_18@outlook.com"> pcdasilvabeserra@gmail.com</a>
