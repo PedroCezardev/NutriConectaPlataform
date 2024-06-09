@@ -65,10 +65,7 @@ const Logout = () => {
             Gerenciar cookies
           </a>
           <a href="#" className={style.link}>
-            Entre em contato com o suporte NutriConecta
-          </a>
-          <a href="#" className={style.link}>
-            Não compartilhe minhas informações pessoais
+            Entre em contato com o suporte
           </a>
         </div>
       </section>
